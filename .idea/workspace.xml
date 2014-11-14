@@ -27,90 +27,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="create.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1894" selection-end="1894" vertical-scroll-proportion="-7.4693875" vertical-offset="249" max-vertical-offset="750">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/subscriber/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="18" selection-start="221" selection-end="736" vertical-scroll-proportion="-5.5102043" vertical-offset="0" max-vertical-offset="420">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/mailing/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="26" selection-start="1867" selection-end="1867" vertical-scroll-proportion="-8.693877" vertical-offset="99" max-vertical-offset="660">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="edit.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/mailing/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="2081" selection-end="2081" vertical-scroll-proportion="-8.387755" vertical-offset="204" max-vertical-offset="705">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="25" selection-start="2442" selection-end="2442" vertical-scroll-proportion="-6.897959" vertical-offset="352" max-vertical-offset="840">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/show.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="285">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="0" selection-end="2157" vertical-scroll-proportion="-9.877551" vertical-offset="221" max-vertical-offset="810">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/group/create.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="78" selection-start="542" selection-end="655" vertical-scroll-proportion="-4.897959" vertical-offset="0" max-vertical-offset="450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/group/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="74" selection-start="794" selection-end="794" vertical-scroll-proportion="0.6589958" vertical-offset="0" max-vertical-offset="600">
+            <state line="13" column="27" selection-start="245" selection-end="245" vertical-scroll-proportion="-1.4897959" vertical-offset="122" max-vertical-offset="600">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="34" selection-start="1884" selection-end="1900" vertical-scroll-proportion="-3.367347" vertical-offset="600" max-vertical-offset="1485">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014_10_29_073001_create_user_table.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_10_29_073001_create_user_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="60" selection-start="556" selection-end="556" vertical-scroll-proportion="-5.8163266" vertical-offset="0" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014_11_06_141719_create_mailings_table.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_06_141719_create_mailings_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="40" selection-start="561" selection-end="561" vertical-scroll-proportion="-3.7142856" vertical-offset="118" max-vertical-offset="645">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014_11_06_162758_create_table_sending.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_06_162758_create_table_sending.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="47" selection-start="354" selection-end="354" vertical-scroll-proportion="0.43516484" vertical-offset="27" max-vertical-offset="570">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014_10_30_124750_create_template_table.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_10_30_124750_create_template_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="45" selection-start="352" selection-end="360" vertical-scroll-proportion="-4.285714" vertical-offset="0" max-vertical-offset="615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014_11_05_100609_create_group_table.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_05_100609_create_group_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="47" selection-start="438" selection-end="438" vertical-scroll-proportion="-5.2040815" vertical-offset="0" max-vertical-offset="600">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014_11_05_101122_create_subscriber_table.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_05_101122_create_subscriber_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="47" selection-start="414" selection-end="414" vertical-scroll-proportion="-3.5510204" vertical-offset="66" max-vertical-offset="570">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2014_11_05_102757_create_subscriber_group_table.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_05_102757_create_subscriber_group_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="64" selection-start="415" selection-end="467" vertical-scroll-proportion="-4.2244897" vertical-offset="33" max-vertical-offset="555">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroupController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/GroupController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="37" selection-start="880" selection-end="880" vertical-scroll-proportion="15.653061" vertical-offset="1367" max-vertical-offset="1845">
               <folding />
             </state>
           </provider>
@@ -126,26 +127,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_11_05_100609_create_group_table.php" />
-        <option value="$PROJECT_DIR$/app/views/group/index.php" />
         <option value="$PROJECT_DIR$/app/models/Group.php" />
         <option value="$PROJECT_DIR$/app/lang/en/templates.php" />
         <option value="$PROJECT_DIR$/app/views/group/index.blade.php" />
         <option value="$PROJECT_DIR$/app/lang/en/group.php" />
         <option value="$PROJECT_DIR$/app/views/group/show.balade.php" />
         <option value="$PROJECT_DIR$/app/views/group/show.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/GroupController.php" />
         <option value="$PROJECT_DIR$/app/models/Subscriber.php" />
         <option value="$PROJECT_DIR$/app/lang/en/subscriber.php" />
         <option value="$PROJECT_DIR$/app/models/SubscriberGroups.php" />
         <option value="$PROJECT_DIR$/app/models/SubscriberGroup.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_11_06_141719_create_mailings_table.php" />
         <option value="$PROJECT_DIR$/app/models/Mailing.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_11_05_102757_create_subscriber_group_table.php" />
         <option value="$PROJECT_DIR$/app/models/Sanding.php" />
         <option value="$PROJECT_DIR$/app/commands/sandmail.php" />
         <option value="$PROJECT_DIR$/app/commands/SandmailCommand.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_11_06_162758_create_table_sending.php" />
         <option value="$PROJECT_DIR$/app/config/mail.php" />
         <option value="$PROJECT_DIR$/app/views/emails/template.blade.php" />
         <option value="$PROJECT_DIR$/app/views/group/subscriber.blade.php" />
@@ -177,6 +173,11 @@
         <option value="$PROJECT_DIR$/app/views/templates/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/views/group/create.blade.php" />
         <option value="$PROJECT_DIR$/app/views/group/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/GroupController.php" />
+        <option value="$PROJECT_DIR$/app/database/migrations/2014_11_06_141719_create_mailings_table.php" />
+        <option value="$PROJECT_DIR$/app/database/migrations/2014_11_05_100609_create_group_table.php" />
+        <option value="$PROJECT_DIR$/app/database/migrations/2014_11_05_101122_create_subscriber_table.php" />
+        <option value="$PROJECT_DIR$/app/database/migrations/2014_11_06_162758_create_table_sending.php" />
       </list>
     </option>
   </component>
@@ -284,171 +285,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subscriber" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="group" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -528,47 +365,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commands" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -627,7 +424,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3887114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3887114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -661,36 +458,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/Template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="164" selection-end="201" vertical-scroll-proportion="0.18072289" vertical-offset="0" max-vertical-offset="498" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/SubscriberGroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="31" selection-start="80" selection-end="107" vertical-scroll-proportion="0.11516315" vertical-offset="0" max-vertical-offset="521" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Mailing.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="38" selection-start="73" selection-end="79" vertical-scroll-proportion="0.08637236" vertical-offset="0" max-vertical-offset="521" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_05_102757_create_subscriber_group_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="64" selection-start="415" selection-end="467" vertical-scroll-proportion="0.41566265" vertical-offset="33" max-vertical-offset="555" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_06_141719_create_mailings_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="30" selection-start="297" selection-end="307" vertical-scroll-proportion="-3.625" vertical-offset="123" max-vertical-offset="645" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_06_162758_create_table_sending.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="42" selection-start="386" selection-end="386" vertical-scroll-proportion="0.42771083" vertical-offset="27" max-vertical-offset="570" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Sanding.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="1" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165" />
@@ -739,11 +506,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/Subscriber.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="4" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="285" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_05_101122_create_subscriber_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="38" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="585" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lang/ru/reminders.php">
@@ -852,13 +614,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="19" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
@@ -885,13 +640,6 @@
     <entry file="file://$PROJECT_DIR$/app/database/seeds/UserSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="49" selection-start="165" selection-end="187" vertical-scroll-proportion="0.12133891" vertical-offset="47" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_10_29_073001_create_user_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="60" selection-start="556" selection-end="556" vertical-scroll-proportion="0.5962343" vertical-offset="0" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
@@ -962,7 +710,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/group/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="74" selection-start="794" selection-end="794" vertical-scroll-proportion="0.6589958" vertical-offset="0" max-vertical-offset="600">
+        <state line="13" column="27" selection-start="245" selection-end="245" vertical-scroll-proportion="-1.4897959" vertical-offset="122" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/GroupController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="37" selection-start="880" selection-end="880" vertical-scroll-proportion="15.653061" vertical-offset="1367" max-vertical-offset="1845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="34" selection-start="1884" selection-end="1900" vertical-scroll-proportion="-3.367347" vertical-offset="600" max-vertical-offset="1485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_10_29_073001_create_user_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="60" selection-start="556" selection-end="556" vertical-scroll-proportion="-5.8163266" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_10_30_124750_create_template_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="45" selection-start="352" selection-end="360" vertical-scroll-proportion="-4.285714" vertical-offset="0" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_05_100609_create_group_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="47" selection-start="438" selection-end="438" vertical-scroll-proportion="-5.2040815" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_05_101122_create_subscriber_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="47" selection-start="414" selection-end="414" vertical-scroll-proportion="-3.5510204" vertical-offset="66" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_05_102757_create_subscriber_group_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="64" selection-start="415" selection-end="467" vertical-scroll-proportion="-4.2244897" vertical-offset="33" max-vertical-offset="555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_06_141719_create_mailings_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="40" selection-start="561" selection-end="561" vertical-scroll-proportion="-3.7142856" vertical-offset="118" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_06_162758_create_table_sending.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="47" selection-start="354" selection-end="354" vertical-scroll-proportion="0.43516484" vertical-offset="27" max-vertical-offset="570">
           <folding />
         </state>
       </provider>

@@ -16,7 +16,7 @@ class CreateGroupTable extends Migration {
             $table->increments('id');
             $table->string('title')->unique();
             $table->text('desc');
-            $table->string('place'); //file,add,api
+            $table->string('place')->nullable(); //file,add,api
             //$table->softDeletes();
             $table->timestamps();
         });

@@ -15,7 +15,7 @@ class CreateSubscriberTable extends Migration {
         Schema::create('subscribers', function($table) {
             $table->increments('id');
             $table->string('email')->unique();
-            $table->string('place'); //file,add,api
+            $table->string('place')->nullable(); //file,add,api
             $table->softDeletes();
             $table->timestamps();
         });

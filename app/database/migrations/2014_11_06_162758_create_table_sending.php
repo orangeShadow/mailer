@@ -14,9 +14,9 @@ class CreateTableSending extends Migration {
 	{
 		Schema::create('sanding', function($table) {
             $table->increments('id');
-            $table->string('email');
-            $table->dateTime('sendAfter');
-            $table->integer('mailing_id');
+            $table->string('email')->nullable();
+            $table->dateTime('sendAfter')->nullable();
+            $table->integer('mailing_id')->nullable();
         });
 	}
 

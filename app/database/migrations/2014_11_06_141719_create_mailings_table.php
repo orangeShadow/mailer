@@ -18,7 +18,7 @@ class CreateMailingsTable extends Migration {
             $table->text('groups');
             $table->integer('template_id') ;
             $table->text('content');
-            $table->boolean('repeat');
+            $table->boolean('repeat')->nullable();
             $table->dateTime('startdt');
             $table->softDeletes();
             $table->timestamps();
