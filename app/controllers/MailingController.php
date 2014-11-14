@@ -11,7 +11,7 @@ class MailingController extends \BaseController {
 	public function index()
 	{
 		$mailings = Mailing::paginate(20);
-        return View::make('mailing.index')->with('mailings');
+        return View::make('mailing.index')->with(compact('mailings'));
 	}
 
 	/**
@@ -132,7 +132,13 @@ class MailingController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+        $template = Mailing::findOrFail($id);
+        if ($template->delete()){
+            Session::flash('template.destroy',trans('mailing.destroy',array('id'=>$id)));
+            return Redirect::to(URL::action('MailingController@index'));
+        }else{
+            App::abort(500,trans('mailing.errorDelete'));
+        }
 	}
 
 }

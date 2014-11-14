@@ -92,7 +92,13 @@ class SubscriberController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+        $template = Subscriber::findOrFail($id);
+        if ($template->delete()){
+            Session::flash('template.destroy',trans('subscriber.destroy',array('id'=>$id)));
+            return Redirect::to(URL::action('SubscriberController@index'));
+        }else{
+            App::abort(500,trans('templates.errorDelete'));
+        }
 	}
 
 }

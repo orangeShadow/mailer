@@ -18,7 +18,7 @@ class CreateUserTable extends Migration {
             $table->string('password');
             $table->string('full_name')->nullable();
             $table->string('role')->nullable();
-            $table->string('remember_token',100); //Обязательное поле, для защищенности Cookie
+            $table->string('remember_token',100)->nullable(); //Обязательное поле, для защищенности Cookie
             $table->softDeletes();
             $table->timestamps();
         });

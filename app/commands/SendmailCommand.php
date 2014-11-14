@@ -37,7 +37,7 @@ class SendmailCommand extends Command {
 	 */
 	public function fire()
 	{
-
+        ini_set('max_execution_time', 600);
         $mails = DB::select('SELECT s.id as id,s.email as email,t.header as header,t.footer as footer,m.content as content,m.title as title
                             FROM mailer.sanding as s
                             LEFT JOIN mailer.mailings as m on(s.mailing_id = m.id)
