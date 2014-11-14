@@ -8,7 +8,8 @@
 <div class="row">
     <div class="col-lg-12">
         {{ Form::open(array('url' => URL::action('TemplatesController@store')))}}
-        <div class="form-group @if(!empty($errors->first('title'))) {{'has-error'}} @endif">
+        <?$errorTitle=$errors->first('title')?>
+        <div class="form-group @if(!empty($errorTitle)) {{'has-error'}} @endif">
             {{Form::label(trans('templates.Title'),'',array('class'=>'control-label'))}}
             {{Form::text('title','',array('class'=>'form-control'))}}
         </div>
