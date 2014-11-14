@@ -19,7 +19,7 @@ class CreateMailingsTable extends Migration {
             $table->integer('template_id') ;
             $table->text('content');
             $table->boolean('repeat')->nullable();
-            $table->dateTime('startdt');
+            $table->dateTime('startdt')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

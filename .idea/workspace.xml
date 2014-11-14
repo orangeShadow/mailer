@@ -54,19 +54,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014_11_06_141719_create_mailings_table.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="2014_11_06_141719_create_mailings_table.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_06_141719_create_mailings_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="40" selection-start="561" selection-end="561" vertical-scroll-proportion="-3.7142856" vertical-offset="118" max-vertical-offset="645">
+            <state line="21" column="50" selection-start="571" selection-end="571" vertical-scroll-proportion="0.4" vertical-offset="118" max-vertical-offset="645">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014_11_06_162758_create_table_sending.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2014_11_06_162758_create_table_sending.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_06_162758_create_table_sending.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="47" selection-start="354" selection-end="354" vertical-scroll-proportion="0.43516484" vertical-offset="27" max-vertical-offset="570">
+            <state line="16" column="47" selection-start="354" selection-end="354" vertical-scroll-proportion="-4.0408163" vertical-offset="27" max-vertical-offset="570">
               <folding />
             </state>
           </provider>
@@ -174,10 +174,10 @@
         <option value="$PROJECT_DIR$/app/views/group/create.blade.php" />
         <option value="$PROJECT_DIR$/app/views/group/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/GroupController.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_11_06_141719_create_mailings_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_11_05_100609_create_group_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_11_05_101122_create_subscriber_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_11_06_162758_create_table_sending.php" />
+        <option value="$PROJECT_DIR$/app/database/migrations/2014_11_06_141719_create_mailings_table.php" />
       </list>
     </option>
   </component>
@@ -416,10 +416,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32868758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32868758" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -764,16 +764,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_06_141719_create_mailings_table.php">
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_06_162758_create_table_sending.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="40" selection-start="561" selection-end="561" vertical-scroll-proportion="-3.7142856" vertical-offset="118" max-vertical-offset="645">
+        <state line="16" column="47" selection-start="354" selection-end="354" vertical-scroll-proportion="-4.0408163" vertical-offset="27" max-vertical-offset="570">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_06_162758_create_table_sending.php">
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_06_141719_create_mailings_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="47" selection-start="354" selection-end="354" vertical-scroll-proportion="0.43516484" vertical-offset="27" max-vertical-offset="570">
+        <state line="21" column="50" selection-start="571" selection-end="571" vertical-scroll-proportion="0.4" vertical-offset="118" max-vertical-offset="645">
           <folding />
         </state>
       </provider>
