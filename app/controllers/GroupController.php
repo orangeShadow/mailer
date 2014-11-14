@@ -38,6 +38,7 @@ class GroupController extends \BaseController {
         $validator = Validator::make(Input::all(),array('title'=>'required'));
         if (!$validator->fails()){
             $group = new Group(Input::all());
+            $group->place = 'mailer';
             if ($group->save()){
                 Session::flash('group.create',trans('group.messageCreate',array('id'=>$group->id)));
                 return Redirect::to(URL::action('GroupController@index'));
