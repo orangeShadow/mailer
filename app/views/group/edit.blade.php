@@ -13,11 +13,13 @@
 <div class="row">
     <div class="col-lg-12">
         {{ Form::open(array('url' => URL::action('GroupController@update',array('id'=>$group->id)),'method'=>"PUT"))}}
-        <div class="form-group @if(!empty($errors->first('title'))) {{'has-error'}} @endif">
+        <?$titleError = $errors->first('title')?>
+        <div class="form-group @if(!empty($titleError)) {{'has-error'}} @endif">
             {{Form::label(trans('group.title'),'',array('class'=>'control-label'))}}
             {{Form::text('title',$group->title,array('class'=>'form-control'))}}
         </div>
-        <div class="form-group">
+        <?$desc = $errors->first('desc')?>
+        <div class="form-group @if(!empty($desc)) {{'has-error'}} @endif">
             {{Form::label(trans('group.desc'),'',array('class'=>'control-label'))}}
             {{Form::textarea('desc',$group->desc,array('class'=>'form-control'))}}
         </div>
