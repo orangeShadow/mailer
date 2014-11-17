@@ -10,7 +10,7 @@
         @if(Session::has('mailing.create'))
         <div class="alert alert-info">{{Session::get('mailing.edit')}}</div>
         @endif
-        {{ Form::open(array('url' => URL::action('MailingController@update',array("id"=>$mailing->id))))}}
+        {{ Form::open(array('url' => URL::action('MailingController@update',array("id"=>$mailing->id)),'method'=>"PUT"))}}
             <?$titleError = $errors->first('title')?>
             <div class="form-group @if(!empty($titleError)) {{'has-error'}} @endif">
                 {{Form::label(trans('mailing.title'),'',array('class'=>'control-label'))}}
