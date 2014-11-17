@@ -53,12 +53,14 @@
             </li>
             <li @if(strpos(Route::getCurrentRoute()->getPath(),'group')!==false) class="active" @endif>
                 <a href="#"><i class="fa fa-users fa-fw"></i> {{trans('main.SubscribersGroup')}}<span class="fa arrow"></span></a>
-                <li>
-                    <a @if(Route::getCurrentRoute()->getPath()=='group') class="active" @endif href="{{URL::action('GroupController@index')}}">{{trans('main.GroupList')}}</a>
-                </li>
-                <li>
-                    <a @if(Route::getCurrentRoute()->getPath()=='group/create') class="active" @endif href="{{URL::action('GroupController@create')}}">{{trans('main.AddGroup')}}</a>
-                </li>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a @if(Route::getCurrentRoute()->getPath()=='group') class="active" @endif href="{{URL::action('GroupController@index')}}">{{trans('main.GroupList')}}</a>
+                    </li>
+                    <li>
+                        <a @if(Route::getCurrentRoute()->getPath()=='group/create') class="active" @endif href="{{URL::action('GroupController@create')}}">{{trans('main.AddGroup')}}</a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </div>

@@ -10,7 +10,12 @@ class SubscriberController extends \BaseController {
 	 */
 	public function index()
 	{
-		$subscribers  = Subscriber::paginate(50);
+        if(Input::get('email',false)){
+            $subscribers  = Subscriber::where('email','like','%'.Input::get('email').'%')->paginate(50);
+        }else{
+            $subscribers  = Subscriber::paginate(50);
+        }
+
         $title = trans('subscriber.title');
         return View::make('subscriber.index')->with(compact('subscribers','title'));
 	}
@@ -35,13 +40,22 @@ class SubscriberController extends \BaseController {
 	 */
 	public function store()
 	{
-        $validator = Validator::make(Input::all(),array('email'=>'required|email'));
+
+        $validator = Validator::make(Input::except('group_id'),array('email'=>'required|email|unique:subscribers'));
         if (!$validator->fails()){
-            $subscriber = new Subscriber(Input::all());
+            $subscriber = new Subscriber(Input::except('group_id'));
+
             if ($subscriber->save()){
                 Session::flash('subscriber.create',trans('subscriber.messageCreate',array('id'=>$subscriber->id)));
+                $groups = Input::get('group_id',null);
+                if(!empty($groups)){
+                    foreach($groups as $gr_id){
+                        DB::table('subscriber_group')->insert(array('subscriber_id'=>$subscriber->id,'group_id'=>$gr_id));
+                    }
+                }
                 return Redirect::to(URL::action('SubscriberController@index'));
             }
+
         }else{
             return Redirect::to(URL::action('SubscriberController@create'))->withInput(Input::except('_token'))->withErrors($validator->errors());
         }
@@ -93,6 +107,7 @@ class SubscriberController extends \BaseController {
 	public function destroy($id)
 	{
         $template = Subscriber::findOrFail($id);
+        DB::table('subscriber_group')->where("subscriber_id",'=',$id)->delete();
         if ($template->delete()){
             Session::flash('template.destroy',trans('subscriber.destroy',array('id'=>$id)));
             return Redirect::to(URL::action('SubscriberController@index'));

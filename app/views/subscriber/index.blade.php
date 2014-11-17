@@ -22,6 +22,16 @@
                     <th style="width:150px;">{{trans('subscriber.createAt')}}</th>
                     <th style="width:50px;"></th>
                 </tr>
+                <tr>
+                    <th style="width:50px;">#</th>
+                    <th>
+                        {{Form::open(array('method'=>"get"))}}
+                            {{Form::input('text','email',Input::get('email',null))}}
+                        {{Form::close()}}
+                    </th>
+                    <th style="width:150px;"></th>
+                    <th style="width:50px;"></th>
+                </tr>
                 </thead>
                 <tbody>
                 @if(!empty($subscribers))

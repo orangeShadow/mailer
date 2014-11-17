@@ -40,7 +40,8 @@ class CsvImportCommand extends Command {
         $h = fopen(base_path().'/public/files/subscriber.csv','r');
         while($row = fgets($h)){
             try{
-                $id = DB::table('subscribers')->insertGetId(array('email'=>$row,'place'=>'csv'));
+                $dt = new DateTme();
+                $id = DB::table('subscribers')->insertGetId(array('email'=>$row,'place'=>'csv','created_at'=>$dt->format('Y-m-d H:i:s')));
                 DB::table('subscriber_group')->insert(array('subscriber_id'=>$id,'group_id'=>2));
             }catch(Exception $e){
                 continue;
