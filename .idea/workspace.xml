@@ -80,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sql.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sql.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sql.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35315984" vertical-offset="0" max-vertical-offset="807">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="855">
+              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -103,8 +103,8 @@
       <file leaf-file-name="SubscriberController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/SubscriberController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1860">
-              <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+            <state vertical-scroll-proportion="-8.75" vertical-offset="495" max-vertical-offset="1860">
+              <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -120,31 +120,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/subscriber/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="945">
-              <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
-              <folding>
-                <element signature="e#604#623#0#HTML" expanded="true" />
-                <element signature="e#703#723#0#HTML" expanded="true" />
-                <element signature="e#786#805#0#HTML" expanded="true" />
-                <element signature="e#879#898#0#HTML" expanded="true" />
-                <element signature="e#1171#1191#0#HTML" expanded="true" />
-                <element signature="e#1222#1241#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MailingController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MailingController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/MailingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-34.625" vertical-offset="1209" max-vertical-offset="2235">
-              <caret line="136" column="24" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.7784431" vertical-offset="360" max-vertical-offset="2190">
+              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
               <folding>
-                <marker date="1415605910000" expanded="true" signature="1062:1284" placeholder="select email..subscriber_group..." />
-                <marker date="1415605910000" expanded="true" signature="2993:3215" placeholder="select email..subscriber_group..." />
+                <marker date="1416234943000" expanded="true" signature="1097:1508" placeholder="INSERT INTO ..." />
+                <marker date="1416234943000" expanded="true" signature="1178:1508" placeholder="SELECT email..subscriber_group..." />
+                <marker date="1416234943000" expanded="true" signature="1486:1508" placeholder="INSERT INTO ..." />
+                <marker date="1416234943000" expanded="true" signature="1486:1508" placeholder="select email..subscriber_group..." />
+                <marker date="1416234943000" expanded="true" signature="3095:3133" placeholder="DELETE FROM ..." />
+                <marker date="1416234943000" expanded="true" signature="3095:3133" placeholder="DELETE FROM ..." />
+                <marker date="1416234943000" expanded="true" signature="3095:3162" placeholder="DELETE FROM ..." />
+                <marker date="1416234943000" expanded="true" signature="3174:3576" placeholder="INSERT INTO ..." />
+                <marker date="1416234943000" expanded="true" signature="3194:3576" placeholder="select email..subscriber_group..." />
+                <marker date="1416234943000" expanded="true" signature="3255:3268" placeholder="SELECT email..." />
+                <marker date="1416234943000" expanded="true" signature="3255:3314" placeholder="SELECT email..." />
+                <marker date="1416234943000" expanded="true" signature="3255:3555" placeholder="SELECT email..subscriber_group..." />
+                <marker date="1416234943000" expanded="true" signature="3255:3576" placeholder="SELECT email..subscriber_group..." />
+                <marker date="1416234943000" expanded="true" signature="3575:3576" placeholder="SELECT email..subscriber_group..." />
+                <marker date="1416234943000" expanded="true" signature="3575:3576" placeholder="select email..subscriber_group..." />
+                <marker date="1416234943000" expanded="true" signature="3989:4116" placeholder="/** * Remove..." />
               </folding>
             </state>
           </provider>
@@ -153,8 +150,18 @@
       <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/mailing/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="705">
-              <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+            <state vertical-scroll-proportion="-11.875" vertical-offset="60" max-vertical-offset="720">
+              <caret line="23" column="108" selection-start-line="23" selection-start-column="108" selection-end-line="23" selection-end-column="108" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/group/edit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.625" vertical-offset="75" max-vertical-offset="600">
+              <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -163,8 +170,8 @@
       <file leaf-file-name="left_nav.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/includes/left_nav.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.625" vertical-offset="360" max-vertical-offset="1095">
-              <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+            <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1095">
+              <caret line="5" column="94" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -203,7 +210,6 @@
         <option value="$PROJECT_DIR$/app/views/includes/top_nav.blade.php" />
         <option value="$PROJECT_DIR$/app/lang/ru/mailing.php" />
         <option value="$PROJECT_DIR$/app/views/mailing/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/MailingController.php" />
         <option value="$PROJECT_DIR$/app/config/local/mail.php" />
         <option value="$PROJECT_DIR$/app/commands/SendmailCommand.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_10_29_073001_create_user_table.php" />
@@ -226,11 +232,12 @@
         <option value="$PROJECT_DIR$/app/views/subscriber/create.blade.php" />
         <option value="$PROJECT_DIR$/app/views/subscriber/index.blade.php" />
         <option value="$PROJECT_DIR$/app/commands/CsvImportCommand.php" />
-        <option value="$PROJECT_DIR$/app/views/includes/left_nav.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/SubscriberController.php" />
-        <option value="$PROJECT_DIR$/app/views/mailing/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/sql.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/includes/left_nav.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/mailing/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/MailingController.php" />
       </list>
     </option>
   </component>
@@ -419,6 +426,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="group" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -579,7 +608,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945284" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32945284" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -765,13 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mailing/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.693877" vertical-offset="99" max-vertical-offset="660">
-          <caret line="35" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.897959" vertical-offset="352" max-vertical-offset="840">
@@ -797,13 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.897959" vertical-offset="0" max-vertical-offset="450">
           <caret line="16" column="78" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/group/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4897959" vertical-offset="122" max-vertical-offset="600">
-          <caret line="13" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -935,27 +950,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/commands/SendmailCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75" vertical-offset="330" max-vertical-offset="1365">
-          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-          <folding>
-            <marker date="1415625854000" expanded="true" signature="-1:-1" placeholder="SELECT s.id ..sanding..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/subscriber/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="945">
           <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
           <folding>
-            <element signature="e#604#623#0#HTML" expanded="true" />
-            <element signature="e#703#723#0#HTML" expanded="true" />
-            <element signature="e#786#805#0#HTML" expanded="true" />
-            <element signature="e#879#898#0#HTML" expanded="true" />
-            <element signature="e#1171#1191#0#HTML" expanded="true" />
-            <element signature="e#1222#1241#0#HTML" expanded="true" />
+            <element signature="e#604#623#0#HTML" expanded="false" />
+            <element signature="e#703#723#0#HTML" expanded="false" />
+            <element signature="e#786#805#0#HTML" expanded="false" />
+            <element signature="e#879#898#0#HTML" expanded="false" />
+            <element signature="e#1171#1191#0#HTML" expanded="false" />
+            <element signature="e#1222#1241#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -964,22 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.125" vertical-offset="0" max-vertical-offset="1215">
           <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/includes/left_nav.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.625" vertical-offset="360" max-vertical-offset="1095">
-          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mailing/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="705">
-          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1000,22 +989,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/SubscriberController.php">
+    <entry file="file://$PROJECT_DIR$/app/views/sql.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1860">
-          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="855">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/MailingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.625" vertical-offset="1209" max-vertical-offset="2235">
-          <caret line="136" column="24" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
-          <folding>
-            <marker date="1415605910000" expanded="true" signature="1062:1284" placeholder="select email..subscriber_group..." />
-            <marker date="1415605910000" expanded="true" signature="2993:3215" placeholder="select email..subscriber_group..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,11 +1005,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sql.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/commands/SendmailCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35315984" vertical-offset="0" max-vertical-offset="807">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state vertical-scroll-proportion="1.3173653" vertical-offset="0" max-vertical-offset="1365">
+          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+          <folding>
+            <marker date="1415625854000" expanded="true" signature="-1:-1" placeholder="SELECT s.id ..sanding..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/includes/left_nav.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="5" column="94" selection-start-line="5" selection-start-column="94" selection-end-line="5" selection-end-column="94" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/SubscriberController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75" vertical-offset="495" max-vertical-offset="1860">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mailing/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26946107" vertical-offset="0" max-vertical-offset="660">
+          <caret line="9" column="73" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/group/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="75" max-vertical-offset="600">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mailing/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875" vertical-offset="60" max-vertical-offset="720">
+          <caret line="23" column="108" selection-start-line="23" selection-start-column="108" selection-end-line="23" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/MailingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7784431" vertical-offset="360" max-vertical-offset="2190">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+          <folding>
+            <marker date="1416234943000" expanded="true" signature="1097:1508" placeholder="INSERT INTO ..." />
+            <marker date="1416234943000" expanded="true" signature="1178:1508" placeholder="SELECT email..subscriber_group..." />
+            <marker date="1416234943000" expanded="true" signature="1486:1508" placeholder="INSERT INTO ..." />
+            <marker date="1416234943000" expanded="true" signature="1486:1508" placeholder="select email..subscriber_group..." />
+            <marker date="1416234943000" expanded="true" signature="3095:3133" placeholder="DELETE FROM ..." />
+            <marker date="1416234943000" expanded="true" signature="3095:3133" placeholder="DELETE FROM ..." />
+            <marker date="1416234943000" expanded="true" signature="3095:3162" placeholder="DELETE FROM ..." />
+            <marker date="1416234943000" expanded="true" signature="3174:3576" placeholder="INSERT INTO ..." />
+            <marker date="1416234943000" expanded="true" signature="3194:3576" placeholder="select email..subscriber_group..." />
+            <marker date="1416234943000" expanded="true" signature="3255:3268" placeholder="SELECT email..." />
+            <marker date="1416234943000" expanded="true" signature="3255:3314" placeholder="SELECT email..." />
+            <marker date="1416234943000" expanded="true" signature="3255:3555" placeholder="SELECT email..subscriber_group..." />
+            <marker date="1416234943000" expanded="true" signature="3255:3576" placeholder="SELECT email..subscriber_group..." />
+            <marker date="1416234943000" expanded="true" signature="3575:3576" placeholder="SELECT email..subscriber_group..." />
+            <marker date="1416234943000" expanded="true" signature="3575:3576" placeholder="select email..subscriber_group..." />
+            <marker date="1416234943000" expanded="true" signature="3989:4116" placeholder="/** * Remove..." />
+          </folding>
         </state>
       </provider>
     </entry>

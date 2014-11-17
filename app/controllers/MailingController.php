@@ -42,16 +42,12 @@ class MailingController extends \BaseController {
 
             if ($mailing->save()){
                 if(!empty($mailing->groups)){
-                    $res = DB::select('select email FROM subscriber_group as sg
+                    $dt = new DateTime();
+                    DB::insert('INSERT INTO sanding (email,sendAfter,mailing_id)
+                                SELECT email,"'.$dt->format('Y-m-d H:i:s').'" as sendAfter,'.$mailing->id.' as mailing_id
+                                FROM subscriber_group as sg
                                 JOIN subscribers as s on (s.id = sg.subscriber_id and deleted_at is null)
-                                WHERE sg.group_id in ('.$mailing->groups.')');
-
-                    foreach($res as  $row){
-                        $sanding = new Sanding();
-                        $sanding->email = $row->email;
-                        $sanding->mailing_id = $mailing->id;
-                        $sanding->save();
-                    }
+                                WHERE sg.group_id in('.$mailing->groups.')');
                 }
                 Session::flash('mailing.create',trans('mailing.messageCreate',array('id'=>$mailing->id)));
                 return Redirect::to(URL::action('MailingController@index'));
@@ -100,26 +96,27 @@ class MailingController extends \BaseController {
         if (!$validator->fails()){
             $groups = implode(',',Input::get('group_id'));
             $mailing = Mailing::findOrFail($id);
+            $mailing->template_id = Input::get('template_id');
+            $mailing->content = Input::get('content');
             $mailing->groups=$groups;
 
             if ($mailing->save()){
                 if(!empty($mailing->groups)){
-                    $res = DB::select('select email FROM subscriber_group as sg
-                                JOIN subscribers as s on (s.id = sg.subscriber_id and deleted_at is null)
-                                WHERE sg.group_id in ('.$mailing->groups.')');
+                    $dt = new DateTime();
+                    DB::delete("DELETE FROM sanding WHERE  mailing_id=".$id);
 
-                    foreach($res as  $row){
-                        $sanding = new Sanding();
-                        $sanding->email = $row->email;
-                        $sanding->mailing_id = $mailing->id;
-                        $sanding->save();
-                    }
+                    DB::insert('INSERT INTO sanding (email,sendAfter,mailing_id)
+                                SELECT email,"'.$dt->format('Y-m-d H:i:s').'" as sendAfter,'.$id.' as mailing_id
+                                FROM subscriber_group as sg
+                                JOIN subscribers as s on (s.id = sg.subscriber_id and deleted_at is null)
+                                WHERE sg.group_id in('.$mailing->groups.')');
+
                 }
-                Session::flash('mailing.edit',trans('mailing.messageEdit',array('id'=>$mailing->id)));
+                Session::flash('mailing.edit',trans('mailing.messageEdit',array('id'=>$id)));
                 return Redirect::to(URL::action('MailingController@edit',array('id'=>$id)));
             }
         }else{
-            return Redirect::to(URL::action('MailingController@edit'))->withInput(Input::except('_token'))->withErrors($validator->errors());
+            return Redirect::to(URL::action('MailingController@edit',array('id'=>$id)))->withInput(Input::except('_token'))->withErrors($validator->errors());
         }
 	}
 

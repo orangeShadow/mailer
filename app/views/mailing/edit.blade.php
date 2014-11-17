@@ -14,13 +14,14 @@
             <?$titleError = $errors->first('title')?>
             <div class="form-group @if(!empty($titleError)) {{'has-error'}} @endif">
                 {{Form::label(trans('mailing.title'),'',array('class'=>'control-label'))}}
-                {{Form::text('title',$mailing->title,array('class'=>'form-control'))}}
+                {{Form::text('title',$mailing->title,array('class'=>'form-control','disabled'=>'disabled'))}}
+                {{Form::hidden('title',$mailing->title)}}
 
             </div>
             <?$templateError = $errors->first('template_id')?>
             <div class="form-group @if(!empty($templateError)) {{'has-error'}} @endif">
                 {{Form::label(trans('mailing.template'),'',array('class'=>'control-label'))}}
-                {{Form::select('template_id',Template::lists('title','id'),false,array('class'=>'form-control'))}}
+                {{Form::select('template_id',Template::lists('title','id'),Input::get('template_id',$mailing->template_id),array('class'=>'form-control'))}}
             </div>
             <?$groupTemplate = $errors->first('group_id')?>
             <div class="form-group @if(!empty($groupTemplate)) {{'has-error'}} @endif">
