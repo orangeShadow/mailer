@@ -100,4 +100,13 @@ Route::group(array('before' => 'auth'), function(){
         Session::flash('subscriber.csv',trans('subscriber.messageCSV'));
         return Redirect::to(URL::action('SubscriberController@index'));
     });
+    Route::get('/sql',function(){
+       return View::make('sql');
+    });
+    Route::post('/sql',function(){
+        if(Input::get('q',false)){
+            $data = DB::select(DB::raw(Input::get('q'))->getValue());
+        }
+        return View::make('sql')->with(compact('data'));
+    });
 });

@@ -11,9 +11,9 @@ class SubscriberController extends \BaseController {
 	public function index()
 	{
         if(Input::get('email',false)){
-            $subscribers  = Subscriber::where('email','like','%'.Input::get('email').'%')->paginate(50);
+            $subscribers  = Subscriber::where('email','like','%'.Input::get('email').'%')->paginate(100);
         }else{
-            $subscribers  = Subscriber::paginate(50);
+            $subscribers  = Subscriber::paginate(100);
         }
 
         $title = trans('subscriber.title');

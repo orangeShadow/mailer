@@ -41,13 +41,13 @@
                     <li>
                         <a @if(Route::getCurrentRoute()->getPath()=='subscriber/create') class="active" @endif href="{{URL::action('SubscriberController@create')}}">{{trans('main.Add')}}</a>
                     </li>
-
+                    <!--
                     <li>
                         <a href="#">{{trans('main.AddCSV')}}</a>
                     </li>
                     <li>
                         <a href="#">{{trans('main.DeleteCSV')}}</a>
-                    </li>
+                    </li>-->
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
