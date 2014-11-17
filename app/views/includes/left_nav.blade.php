@@ -3,7 +3,7 @@
         <ul class="nav" id="side-menu">
             <li>
 
-                <a @if(Route::getCurrentRoute()->getPath()=='/') class="active" @endif href="{{Config::get('app.url')}}"><i class="fa fa-dashboard fa-fw"></i> {{trans('main.Dashboard')}}</a>
+                <a @if(Route::getCurrentRoute()->getPath()=='/') class="active" @endif href="/"><i class="fa fa-dashboard fa-fw"></i> {{trans('main.Dashboard')}}</a>
             </li>
             <li
                 @if(strpos(Route::getCurrentRoute()->getPath(),'mailing')!==false) class="active" @endif
