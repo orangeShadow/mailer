@@ -16,5 +16,6 @@ return array(
     "DeleteCSV"=>'Remove from CSV',
     "AddCSV"=>'Add from CSV',
     "AddGroup"=>"Add group",
-    "GroupList"=>"Group list"
+    "GroupList"=>"Group list",
+    "SubscribersGroup"=>"Subscribers Group"
 );

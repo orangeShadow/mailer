@@ -1,7 +1,7 @@
 <?php
 /**
  * An helper file for Laravel 4, to provide autocomplete information to your IDE
- * Generated for Laravel 4.2.11 on 2014-10-29.
+ * Generated for Laravel 4.2.11 on 2014-11-17.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -12230,6 +12230,20 @@ namespace {
     }
 
 
+    class FilemanagerLaravel extends \Pqb\FilemanagerLaravel\Facades\FilemanagerLaravel{
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function Filemanager(){
+            return \Pqb\FilemanagerLaravel\FilemanagerLaravel::Filemanager();
+        }
+        
+    }
+
+
     class Debugbar extends \Barryvdh\Debugbar\Facade{
         
         /**
@@ -12708,7 +12722,7 @@ namespace {
          * Also, an extra option 'autoload' may be passed containing an array of
          * assets and/or collections that will be automatically added on startup.
          *
-         * @param array $options Configurable options.
+         * @param array $config Configurable options.
          * @return \Stolz\Assets\Manager 
          * @throws Exception
          * @static 
@@ -12760,23 +12774,33 @@ namespace {
         }
         
         /**
-         * Build the CSS link tags.
+         * Build the CSS `<link>` tags.
+         * 
+         * Accepts an array of $attributes for the HTML tag.
+         * You can take control of the tag rendering by
+         * providing a closure that will receive an array of assets.
          *
+         * @param array|\Closure $attributes
          * @return string 
          * @static 
          */
-        public static function css(){
-            return \Stolz\Assets\Manager::css();
+        public static function css($attributes = null){
+            return \Stolz\Assets\Manager::css($attributes);
         }
         
         /**
-         * Build the JavaScript script tags.
+         * Build the JavaScript `<script>` tags.
+         * 
+         * Accepts an array of $attributes for the HTML tag.
+         * You can take control of the tag rendering by
+         * providing a closure that will receive an array of assets.
          *
+         * @param array|\Closure $attributes
          * @return string 
          * @static 
          */
-        public static function js(){
-            return \Stolz\Assets\Manager::js();
+        public static function js($attributes = null){
+            return \Stolz\Assets\Manager::js($attributes);
         }
         
         /**
@@ -12819,6 +12843,17 @@ namespace {
          */
         public static function resetJs(){
             return \Stolz\Assets\Manager::resetJs();
+        }
+        
+        /**
+         * Build an HTML attribute string from an array.
+         *
+         * @param array $attributes
+         * @return string 
+         * @static 
+         */
+        public static function buildTagAttributes($attributes){
+            return \Stolz\Assets\Manager::buildTagAttributes($attributes);
         }
         
         /**

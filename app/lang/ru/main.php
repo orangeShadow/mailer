@@ -15,5 +15,6 @@ return array(
     "DeleteCSV"=>'Удалить по CSV',
     "AddCSV"=>'Добавить через CSV',
     "AddGroup"=>"Добавить группу",
-    "GroupList"=>"Список групп"
+    "GroupList"=>"Список групп",
+    "SubscribersGroup"=>"Группы подписчиков"
 );
