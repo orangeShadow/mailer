@@ -17,5 +17,6 @@ return array(
     "AddCSV"=>'Add from CSV',
     "AddGroup"=>"Add group",
     "GroupList"=>"Group list",
-    "SubscribersGroup"=>"Subscribers Group"
+    "SubscribersGroup"=>"Subscribers Group",
+    "fomAPI"=>"Group From API"
 );

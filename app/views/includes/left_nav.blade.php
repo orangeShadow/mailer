@@ -60,6 +60,9 @@
                     <li>
                         <a @if(Route::getCurrentRoute()->getPath()=='group/create') class="active" @endif href="{{URL::action('GroupController@create')}}">{{trans('main.AddGroup')}}</a>
                     </li>
+                     <li>
+                        <a @if(Route::getCurrentRoute()->getPath()=='group/fromAPI') class="active" @endif href="{{URL::to('/group/fromAPI')}}">{{trans('main.fromAPI')}}</a>
+                    </li>
                 </ul>
             </li>
         </ul>

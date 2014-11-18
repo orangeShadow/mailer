@@ -39,4 +39,37 @@ $(function(){
         console.log("Ace не подключен");
         console.log(e);
     }
+
+    $(document).on('submit','#form-api',function(e){
+        e.preventDefault();
+        var o = {};
+        $("#form-api :input").each(function(){
+            if($(this).attr('name')=='groups[]' && $(this).is(":checked")){
+                if(o["groups"]===undefined){
+                    o["groups"] = [];
+                }
+                o["groups"].push($(this).val());
+            }
+            if($(this).attr('name')!='groups[]'){
+                o[$(this).attr('name')] = $(this).val();
+            }
+
+        });
+
+        $.post($(this).attr('action'),o,function(data){
+            try{
+                var res = JSON.parse(data);
+                if(res.type=='group'){
+                    $('#form-content').html(res.html);
+                }else if(res.type=='complite'){
+                    $('#form-api').html(res.html);
+                }
+                if(res.error==1){
+                    alert(res.html);
+                }
+            }catch(e){
+
+            }
+        });
+    });
 })

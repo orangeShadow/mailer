@@ -21,7 +21,6 @@ Route::get('/', function()
     }
 });
 
-
 //Authentificate
 Route::post('/login',array('as'=>'login',function()
 {
@@ -46,6 +45,106 @@ Route::get('/logout',array('as'=>'logout',function() {
 
 //auth
 Route::group(array('before' => 'auth'), function(){
+
+    Route::get('/group/fromAPI',function(){
+        return View::make('group.api');
+    });
+
+    Route::post('/group/fromAPI',function(){
+        $type =Input::get('type',null);
+        $groups = Input::get('groups',null);
+        $group_id = Input::get('group_id',null);
+        if(isset($type) && !isset($groups)){
+            if(Input::get('type')==0){
+                $res = \MyLibraries\CRoumingu::getKopilkaGroups();
+            }else{
+                $res = \MyLibraries\CRoumingu::getContragentsGroups();
+            }
+            $html = '<div class="form-group">';
+            $html.= '<label  class="col-sm-2 control-label">Выберите группу из API:</label>';
+            $html.= '<div class="col-sm-10"><div class="checkbox">';
+            foreach($res->data_array as $item){
+                $html.= '<label>';
+                $html.= Form::checkbox('groups[]',$item->groupID);
+                $html.= $item->groupName;
+                $html.="</label><br>";
+
+            }
+            $html.= Form::hidden('type',$type);
+            $html.= '</div></div></div>';
+
+            $html.= '<div class="form-group">';
+            $html.= '<label  class="col-sm-2 control-label">Выберите целевую группу:</label>';
+            $html.= '<div class="col-sm-10">';
+            $html.= Form::select('group_id',Group::lists('title','id'),false,array('class'=>'form-control'));
+            $html.= '</div>';
+            $html.= '</div>';
+            $resp = new StdClass();
+            $resp->error= 0;
+            $resp->type='group';
+            $resp->html = $html;
+            return json_encode($resp,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
+        }elseif(isset($type) && isset($groups) && isset($group_id)){
+            if(Input::get('type')==0){
+                $res = \MyLibraries\CRoumingu::getKopilkaEmails(implode(',',$groups));
+            }else{
+                $res = \MyLibraries\CRoumingu::getContragentsEmails(implode(',',$groups));
+            }
+            $resp = new stdClass();
+            if($res->error == 1){
+                $resp->error =1;
+                $resp->html ="Выбранные группы пусты";
+            }else{
+                $emails = array();
+                if(!empty($res->data_array)){
+                    $resp->count = count($res->data_array );
+                    foreach($res->data_array as $item)
+                    {
+
+                        $emails[] ="'".$item->email."'";
+                    }
+                    $resEmail = DB::select(DB::raw('SELECT id,email FROM subscribers where LOWER (email) in ('.implode(',',$emails).')'));
+                    $emailsClean = array();
+                    $emailsCleanID = array();
+                    foreach($resEmail as $item){
+                        $emailsClean[] = $item->email;
+                        $emailsCleanID[] = $item->id;
+                    }
+                    if(!empty($emailsCleanID)) {
+                        DB::delete(DB::raw("DELETE FROM subscriber_group WHERE subscriber_id in(". implode(',', $emailsCleanID).")"));
+                    }
+                    foreach($emails  as $email){
+                        $email = trim($email,"'");
+                        $lemail = strtolower($email);
+                        if(!in_array($email,$emailsClean) && !in_array($lemail,$emailsClean)){
+                            try{
+                                $id = DB::table('subscribers')->insertGetId(array('email'=>$email,'place'=>'api'));
+                            }catch(Exception $e){
+                                $list = DB::select(DB::raw('SELECT id FROM subscribers WHERE email like "%'.$email.'%"'));
+                                if(!empty($list[0])){
+                                    $id = $list[0]->id;
+                                }
+                            }
+
+                            $emailsCleanID[] = $id;
+                        }
+                    }
+                    $emailsCleanID =array_unique($emailsCleanID);
+                    foreach($emailsCleanID as $sid){
+                            DB::table('subscriber_group')->insert(array('subscriber_id'=>$sid,'group_id'=>$group_id));
+                    }
+                    $resp->error =0;
+                    $resp->type='complite';
+                    $resp->html = 'Готово';
+                }
+
+            }
+            return json_encode($resp,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
+        }
+    });
+
+
+
     Route::controller('filemanager', 'FilemanagerLaravelController');
     Route::resource('templates', 'TemplatesController');
     Route::resource('group', 'GroupController');
@@ -100,9 +199,11 @@ Route::group(array('before' => 'auth'), function(){
         Session::flash('subscriber.csv',trans('subscriber.messageCSV'));
         return Redirect::to(URL::action('SubscriberController@index'));
     });
+
     Route::get('/sql',function(){
        return View::make('sql');
     });
+
     Route::post('/sql',function(){
         if(Input::get('q',false)){
             $data = DB::select(DB::raw(Input::get('q'))->getValue());
