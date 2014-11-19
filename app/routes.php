@@ -273,7 +273,14 @@ Route::group(array('before' => 'auth'), function(){
 
     Route::post('/sql',function(){
         if(Input::get('q',false)){
-            $data = DB::select(DB::raw(Input::get('q'))->getValue());
+            if(Input::get('d',false)){
+                $data = DB::delete(DB::raw(Input::get('q'))->getValue());
+            }elseif(Input::get('u',false)){
+                $data = DB::update(DB::raw(Input::get('q'))->getValue());
+            }else{
+                $data = DB::select(DB::raw(Input::get('q'))->getValue());
+            }
+
         }
         return View::make('sql')->with(compact('data'));
     });
