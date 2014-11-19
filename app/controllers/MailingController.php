@@ -92,15 +92,6 @@ class MailingController extends \BaseController {
             $mailing->groups=$groups;
 
             if ($mailing->save()){
-                if(!empty($mailing->groups)){
-                    $dt = new DateTime();
-                    DB::insert('INSERT INTO sanding (email,sendAfter,mailing_id)
-                                SELECT email,"'.$dt->format('Y-m-d H:i:s').'" as sendAfter,'.$id.' as mailing_id
-                                FROM subscriber_group as sg
-                                JOIN subscribers as s on (s.id = sg.subscriber_id and deleted_at is null)
-                                WHERE sg.group_id in('.$mailing->groups.')');
-
-                }
                 Session::flash('mailing.edit',trans('mailing.messageEdit',array('id'=>$id)));
                 return Redirect::to(URL::action('MailingController@edit',array('id'=>$id)));
             }
