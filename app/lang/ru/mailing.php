@@ -1,6 +1,7 @@
 <?php
 return array(
     'title'=>"Название",
+    'mailingList'=>"Список рассылок",
     'createMailing'=>"Создание Рассылки",
     'create'=>'Создать',
     'template'=>'Шаблон для расссылки',
@@ -16,5 +17,9 @@ return array(
     'destroy'=>'Рассылка :id удалена',
     'errorDelete'=>'Ошибка при удалении',
     'email'=>'Email',
-    'createAt'=>'Создан'
+    'createAt'=>'Создан',
+    'start'=>'Рассылка №:id возобновлена',
+    'newStart'=>'Рассылка №:id запущена',
+    'clean'=>'Рассылка №:id очищена',
+    'stop'=>'Рассылка №:id остановлена',
 );

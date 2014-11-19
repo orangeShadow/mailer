@@ -42,6 +42,7 @@ class SendmailCommand extends Command {
                             FROM mailer.sanding as s
                             LEFT JOIN mailer.mailings as m on(s.mailing_id = m.id)
                             LEFT JOIN mailer.templates as t on(m.template_id = t.id)
+                            WHERE s.stop=0
                             LIMIT 50');
         $toDelete = array();
         foreach($mails as $mail){

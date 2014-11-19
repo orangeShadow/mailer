@@ -49,7 +49,6 @@ Route::group(array('before' => 'auth'), function(){
     Route::get('/group/fromAPI',function(){
         return View::make('group.api');
     });
-
     Route::post('/group/fromAPI',function(){
         $type =Input::get('type',null);
         $groups = Input::get('groups',null);
@@ -143,7 +142,75 @@ Route::group(array('before' => 'auth'), function(){
         }
     });
 
+    Route::get('/mailing/start',function(){
+        $id=Input::get('id',false);
+        if($id){
+            try{
+                $mailing = Mailing::findOrFail($id);
+                $count = DB::table('sanding')->where(array('mailing_id'=>$mailing->id))->count('*');
+                if($count>0){
+                    DB::table('sanding')->where(array('mailing_id'=>$mailing->id))->update(array('stop'=>0));
+                    Session::flash('template.message',trans('mailing.start',array('id'=>$id)));
+                    return Redirect::to(URL::action('MailingController@index'));
+                }else{
+                    if(!empty($mailing->groups)){
+                    $dt = new DateTime();
+                    DB::insert('INSERT INTO sanding (email,sendAfter,mailing_id,stop)
+                                    SELECT email,"'.$dt->format('Y-m-d H:i:s').'" as sendAfter,'.$mailing->id.' as mailing_id, 0 as stop
+                                    FROM subscriber_group as sg
+                                    JOIN subscribers as s on (s.id = sg.subscriber_id and deleted_at is null)
+                                    WHERE sg.group_id in('.$mailing->groups.')');
+                    }
+                    Session::flash('template.message',trans('mailing.newStart',array('id'=>$id)));
+                    return Redirect::to(URL::action('MailingController@index'));
+                }
 
+            }catch(Exception $e){
+                $resp = new StdClass();
+                $resp->error = 1;
+                $resp->message = 'Mailing not found';
+                echo json_encode($resp,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
+                return ;
+            }
+
+        }
+    });
+
+    Route::get('/mailing/stop',function(){
+        $id=Input::get('id',false);
+        if($id){
+            try{
+                $mailing = Mailing::findOrFail($id);
+                DB::table('sanding')->where(array('mailing_id'=>$mailing->id))->update(array('stop'=>1));
+                Session::flash('template.message',trans('mailing.stop',array('id'=>$id)));
+                return Redirect::to(URL::action('MailingController@index'));
+            }catch(Exception $e){
+                $resp = new StdClass();
+                $resp->error = 1;
+                $resp->message = 'Mailing not found';
+                echo json_encode($resp,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
+                return ;
+            }
+        }
+    });
+
+    Route::get('/mailing/clean',function(){
+        $id=Input::get('id',false);
+        if($id){
+            try{
+                $mailing = Mailing::findOrFail($id);
+                DB::delete("DELETE FROM sanding WHERE  mailing_id=".$mailing->id);
+                Session::flash('template.message',trans('mailing.clean',array('id'=>$id)));
+                return Redirect::to(URL::action('MailingController@index'));
+            }catch(Exception $e){
+                $resp = new StdClass();
+                $resp->error = 1;
+                $resp->message = 'Mailing not found';
+                echo json_encode($resp,JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE);
+                return ;
+            }
+        }
+    });
 
     Route::controller('filemanager', 'FilemanagerLaravelController');
     Route::resource('templates', 'TemplatesController');
