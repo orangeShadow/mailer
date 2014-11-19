@@ -8,6 +8,14 @@
                {{Form::label(trans('mailing.groups'),'',array('class'=>'control-label'))}}
                {{Form::textarea('q',Input::get('q',''),array('class'=>'form-control'))}}
            </div>
+           <div class="form-group">
+              {{Form::label('Удаление','',array('class'=>'control-label'))}}
+              {{Form::checkbox('d','Y')}}
+           </div>
+           <div class="form-group">
+              {{Form::label('Обновление','',array('class'=>'control-label'))}}
+              {{Form::checkbox('u','Y')}}
+           </div>
             <div class="form-group">
                 {{ Form::hidden('place','mailer')}}
                 {{ Form::submit(trans('subscriber.create'),array('class'=>'btn btn-default'))}}
@@ -24,7 +32,13 @@
         ?>
     </div>
 </div>
-
+<?if(!empty($error)){?>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="alert alert-danger"><?var_dump($error)?></div>
+    </div>
+</div>
+<?}?>
 <div class="row">
     <div class="col-lg-12">
         <table class="table">

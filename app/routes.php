@@ -272,16 +272,41 @@ Route::group(array('before' => 'auth'), function(){
     });
 
     Route::post('/sql',function(){
+        $error=null;
         if(Input::get('q',false)){
-            if(Input::get('d',false)){
-                $data = DB::delete(DB::raw(Input::get('q'))->getValue());
-            }elseif(Input::get('u',false)){
-                $data = DB::update(DB::raw(Input::get('q'))->getValue());
-            }else{
-                $data = DB::select(DB::raw(Input::get('q'))->getValue());
+            try{
+                if(Input::get('d',false)){
+                    $data = DB::delete(DB::raw(Input::get('q'))->getValue());
+                }elseif(Input::get('u',false)){
+                    $data = DB::update(DB::raw(Input::get('q'))->getValue());
+                }else{
+                    $data = DB::select(DB::raw(Input::get('q'))->getValue());
+                }
+            }catch(Exception $e){
+                $error =$e;
             }
-
         }
-        return View::make('sql')->with(compact('data'));
+        return View::make('sql')->with(compact('data','error'));
     });
+});
+
+Route::get('/unsubscribe',function(){
+    $resp = new stdClass();
+    if(Input::get('email',false)){
+        $res = DB::table('subscribers')->where('email',Input::get('email'))->where('deleted_at',null)->select('id','email')->first();
+        if(!empty($res->id)){
+            $sub = Subscriber::find($res->id);
+            DB::table('subscriber_group')->where("subscriber_id",'=',$res->id)->delete();
+            $sub->delete();
+            $resp->error = 0;
+        }else{
+            $resp->error =1 ;
+            $resp->message = 'Not Found';
+        }
+    }else{
+        $resp->error =1 ;
+        $resp->message = 'Not Found';
+    }
+    echo json_encode($resp,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
+    return;
 });
