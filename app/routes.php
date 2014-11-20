@@ -154,15 +154,17 @@ Route::group(array('before' => 'auth'), function(){
                     return Redirect::to(URL::action('MailingController@index'));
                 }else{
                     if(!empty($mailing->groups)){
-                    $dt = new DateTime();
-                    DB::insert('INSERT INTO sanding (email,sendAfter,mailing_id,stop)
+                        $dt = new DateTime();
+                         $query ='INSERT INTO sanding (email,sendAfter,mailing_id,stop)
                                     SELECT email,"'.$dt->format('Y-m-d H:i:s').'" as sendAfter,'.$mailing->id.' as mailing_id, 0 as stop
                                     FROM subscriber_group as sg
                                     JOIN subscribers as s on (s.id = sg.subscriber_id and deleted_at is null)
-                                    WHERE sg.group_id in('.$mailing->groups.')');
+                                    WHERE sg.group_id in('.$mailing->groups.')';
+                        DB::insert($query);
+
+                        Session::flash('template.message',trans('mailing.newStart',array('id'=>$id)));
+                        return Redirect::to(URL::action('MailingController@index'));
                     }
-                    Session::flash('template.message',trans('mailing.newStart',array('id'=>$id)));
-                    return Redirect::to(URL::action('MailingController@index'));
                 }
 
             }catch(Exception $e){

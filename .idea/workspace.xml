@@ -73,8 +73,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5833335" vertical-offset="2257" max-vertical-offset="3000">
-              <caret line="278" column="18" selection-start-line="278" selection-start-column="18" selection-end-line="278" selection-end-column="18" />
+            <state vertical-scroll-proportion="-12.208333" vertical-offset="397" max-vertical-offset="3030">
+              <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
               <folding>
                 <element signature="e#7#392#0#PHP" expanded="true" />
                 <element signature="e#410#598#1#PHP" expanded="false" />
@@ -82,26 +82,26 @@
                 <element signature="e#1181#1298#2#PHP" expanded="false" />
                 <element signature="e#1395#1452#1#PHP" expanded="false" />
                 <element signature="e#1488#5787#1#PHP" expanded="false" />
-                <marker date="1416395538000" expanded="true" signature="2179:2182" placeholder="..." />
-                <marker date="1416395538000" expanded="true" signature="2179:2308" placeholder="..." />
-                <marker date="1416395538000" expanded="true" signature="3860:3917" placeholder="SELECT id,em..subscribers..." />
-                <marker date="1416395538000" expanded="true" signature="3860:3927" placeholder="SELECT id,em..subscribers..." />
-                <marker date="1416395538000" expanded="true" signature="3860:3942" placeholder="SELECT id,em..subscribers..." />
-                <marker date="1416395538000" expanded="true" signature="4310:4396" placeholder="DELETE FROM ..." />
-                <marker date="1416395538000" expanded="true" signature="4931:4941" placeholder="SELECT ID fr..." />
-                <marker date="1416395538000" expanded="true" signature="4931:4989" placeholder="SELECT id FR..subscribers..." />
-                <marker date="1416395538000" expanded="true" signature="6523:6966" placeholder="INSERT INTO ..." />
-                <marker date="1416395538000" expanded="true" signature="6613:6966" placeholder="SELECT email..subscriber_group..." />
-                <marker date="1416395538000" expanded="true" signature="8441:8479" placeholder="DELETE FROM ..." />
+                <marker date="1416487253000" expanded="true" signature="2179:2182" placeholder="..." />
+                <marker date="1416487253000" expanded="true" signature="2179:2308" placeholder="..." />
+                <marker date="1416487253000" expanded="true" signature="3860:3917" placeholder="SELECT id,em..subscribers..." />
+                <marker date="1416487253000" expanded="true" signature="3860:3927" placeholder="SELECT id,em..subscribers..." />
+                <marker date="1416487253000" expanded="true" signature="3860:3942" placeholder="SELECT id,em..subscribers..." />
+                <marker date="1416487253000" expanded="true" signature="4310:4396" placeholder="DELETE FROM ..." />
+                <marker date="1416487253000" expanded="true" signature="4931:4941" placeholder="SELECT ID fr..." />
+                <marker date="1416487253000" expanded="true" signature="4931:4989" placeholder="SELECT id FR..subscribers..." />
+                <marker date="1416487253000" expanded="true" signature="6529:6972" placeholder="INSERT INTO ..." />
+                <marker date="1416487253000" expanded="true" signature="6619:6972" placeholder="SELECT email..subscriber_group..." />
+                <marker date="1416487253000" expanded="true" signature="8499:8537" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sql.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sql.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sql.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74552685" vertical-offset="180" max-vertical-offset="1065">
+            <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1065">
               <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
               <folding />
             </state>
@@ -111,7 +111,7 @@
       <file leaf-file-name="SubscriberController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/SubscriberController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.208333" vertical-offset="1357" max-vertical-offset="1860">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1357" max-vertical-offset="1860">
               <caret line="110" column="31" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="31" />
               <folding />
             </state>
@@ -121,13 +121,9 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/mailing/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.833333" vertical-offset="307" max-vertical-offset="1005">
+            <state vertical-scroll-proportion="0.0" vertical-offset="307" max-vertical-offset="1005">
               <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
-              <folding>
-                <element signature="e#758#777#0#HTML" expanded="true" />
-                <element signature="e#865#885#0#HTML" expanded="true" />
-                <element signature="e#946#966#0#HTML" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,7 +131,7 @@
       <file leaf-file-name="mailing.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lang/en/mailing.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
+            <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="135">
               <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
               <folding />
             </state>
@@ -145,7 +141,7 @@
       <file leaf-file-name="Mailing.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Mailing.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="300">
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="300">
               <caret line="6" column="30" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="30" />
               <folding />
             </state>
@@ -155,7 +151,7 @@
       <file leaf-file-name="mailing.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lang/ru/mailing.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="450">
+            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="450">
               <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding />
             </state>
@@ -165,24 +161,23 @@
       <file leaf-file-name="MailingController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/MailingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.833333" vertical-offset="1552" max-vertical-offset="2055">
-              <caret line="124" column="89" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="89" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1095" max-vertical-offset="1920">
+              <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
               <folding>
-                <marker date="1416381621000" expanded="true" signature="2541:2943" placeholder="INSERT INTO ..." />
-                <marker date="1416381621000" expanded="true" signature="2622:2943" placeholder="SELECT email..subscriber_group..." />
-                <marker date="1416381621000" expanded="true" signature="3621:3659" placeholder="DELETE FROM ..." />
+                <marker date="1416396879000" expanded="true" signature="3076:3114" placeholder="DELETE FROM ..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SendmailCommand.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SendmailCommand.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/commands/SendmailCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125" vertical-offset="285" max-vertical-offset="1380">
-              <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.105367795" vertical-offset="487" max-vertical-offset="1470">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
               <folding>
-                <marker date="1416381383000" expanded="true" signature="680:1091" placeholder="SELECT s.id ..sanding..." />
+                <marker date="1416487418000" expanded="true" signature="812:1221" placeholder="SELECT s.id ..sanding..." />
+                <marker date="1416487418000" expanded="true" signature="812:1224" placeholder="SELECT s.id ..sanding..." />
               </folding>
             </state>
           </provider>
@@ -191,7 +186,7 @@
       <file leaf-file-name="2014_11_06_162758_create_table_sending.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_06_162758_create_table_sending.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.0" vertical-offset="27" max-vertical-offset="570">
+            <state vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="570">
               <caret line="14" column="14" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="14" />
               <folding />
             </state>
@@ -251,14 +246,14 @@
         <option value="$PROJECT_DIR$/app/lang/ru/main.php" />
         <option value="$PROJECT_DIR$/app/lang/en/main.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_11_19_111038_add_filed_sending.php" />
-        <option value="$PROJECT_DIR$/app/commands/SendmailCommand.php" />
-        <option value="$PROJECT_DIR$/app/controllers/MailingController.php" />
         <option value="$PROJECT_DIR$/app/lang/en/mailing.php" />
         <option value="$PROJECT_DIR$/app/lang/ru/mailing.php" />
         <option value="$PROJECT_DIR$/app/models/Mailing.php" />
         <option value="$PROJECT_DIR$/app/views/mailing/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/sql.blade.php" />
+        <option value="$PROJECT_DIR$/app/controllers/MailingController.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/commands/SendmailCommand.php" />
       </list>
     </option>
   </component>
@@ -339,6 +334,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -367,6 +363,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -385,7 +395,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="storage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -403,131 +413,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="storage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mailing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="en" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mailer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="logs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -551,7 +441,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -584,15 +473,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-env-vars>false</pass-parent-env-vars>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -618,7 +507,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26091588" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26890308" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -893,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1845">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="735">
           <caret line="30" column="236" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="236" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -909,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="450">
           <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -917,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="600">
           <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -925,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1215">
           <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2536" max-vertical-offset="3405">
           <caret line="213" column="36" selection-start-line="213" selection-start-column="36" selection-end-line="213" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,7 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="547" max-vertical-offset="1140">
           <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -949,7 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="405">
           <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -957,17 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.5" vertical-offset="0" max-vertical-offset="570">
           <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/commands/SendmailCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="285" max-vertical-offset="1380">
-          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
-          <folding>
-            <marker date="1416381383000" expanded="true" signature="680:1091" placeholder="SELECT s.id ..sanding..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -975,33 +845,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5964215" vertical-offset="0" max-vertical-offset="503">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_11_06_162758_create_table_sending.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0" vertical-offset="27" max-vertical-offset="570">
+        <state vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="570">
           <caret line="14" column="14" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/MailingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.833333" vertical-offset="1552" max-vertical-offset="2055">
-          <caret line="124" column="89" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="89" />
-          <folding>
-            <marker date="1416381621000" expanded="true" signature="2541:2943" placeholder="INSERT INTO ..." />
-            <marker date="1416381621000" expanded="true" signature="2622:2943" placeholder="SELECT email..subscriber_group..." />
-            <marker date="1416381621000" expanded="true" signature="3621:3659" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/lang/en/mailing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="135">
           <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
           <folding />
         </state>
@@ -1009,7 +866,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lang/ru/mailing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="450">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="450">
           <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding />
         </state>
@@ -1017,7 +874,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Mailing.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="300">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="300">
           <caret line="6" column="30" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="30" />
           <folding />
         </state>
@@ -1025,28 +882,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/mailing/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.833333" vertical-offset="307" max-vertical-offset="1005">
+        <state vertical-scroll-proportion="0.0" vertical-offset="307" max-vertical-offset="1005">
           <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
-          <folding>
-            <element signature="e#758#777#0#HTML" expanded="true" />
-            <element signature="e#865#885#0#HTML" expanded="true" />
-            <element signature="e#946#966#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/SubscriberController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.208333" vertical-offset="1357" max-vertical-offset="1860">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1357" max-vertical-offset="1860">
           <caret line="110" column="31" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sql.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1065">
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/MailingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1095" max-vertical-offset="1920">
+          <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+          <folding>
+            <marker date="1416396879000" expanded="true" signature="3076:3114" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5833335" vertical-offset="2257" max-vertical-offset="3000">
-          <caret line="278" column="18" selection-start-line="278" selection-start-column="18" selection-end-line="278" selection-end-column="18" />
+        <state vertical-scroll-proportion="-12.208333" vertical-offset="397" max-vertical-offset="3030">
+          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
           <folding>
             <element signature="e#7#392#0#PHP" expanded="true" />
             <element signature="e#410#598#1#PHP" expanded="false" />
@@ -1054,26 +925,29 @@
             <element signature="e#1181#1298#2#PHP" expanded="false" />
             <element signature="e#1395#1452#1#PHP" expanded="false" />
             <element signature="e#1488#5787#1#PHP" expanded="false" />
-            <marker date="1416395538000" expanded="true" signature="2179:2182" placeholder="..." />
-            <marker date="1416395538000" expanded="true" signature="2179:2308" placeholder="..." />
-            <marker date="1416395538000" expanded="true" signature="3860:3917" placeholder="SELECT id,em..subscribers..." />
-            <marker date="1416395538000" expanded="true" signature="3860:3927" placeholder="SELECT id,em..subscribers..." />
-            <marker date="1416395538000" expanded="true" signature="3860:3942" placeholder="SELECT id,em..subscribers..." />
-            <marker date="1416395538000" expanded="true" signature="4310:4396" placeholder="DELETE FROM ..." />
-            <marker date="1416395538000" expanded="true" signature="4931:4941" placeholder="SELECT ID fr..." />
-            <marker date="1416395538000" expanded="true" signature="4931:4989" placeholder="SELECT id FR..subscribers..." />
-            <marker date="1416395538000" expanded="true" signature="6523:6966" placeholder="INSERT INTO ..." />
-            <marker date="1416395538000" expanded="true" signature="6613:6966" placeholder="SELECT email..subscriber_group..." />
-            <marker date="1416395538000" expanded="true" signature="8441:8479" placeholder="DELETE FROM ..." />
+            <marker date="1416487253000" expanded="true" signature="2179:2182" placeholder="..." />
+            <marker date="1416487253000" expanded="true" signature="2179:2308" placeholder="..." />
+            <marker date="1416487253000" expanded="true" signature="3860:3917" placeholder="SELECT id,em..subscribers..." />
+            <marker date="1416487253000" expanded="true" signature="3860:3927" placeholder="SELECT id,em..subscribers..." />
+            <marker date="1416487253000" expanded="true" signature="3860:3942" placeholder="SELECT id,em..subscribers..." />
+            <marker date="1416487253000" expanded="true" signature="4310:4396" placeholder="DELETE FROM ..." />
+            <marker date="1416487253000" expanded="true" signature="4931:4941" placeholder="SELECT ID fr..." />
+            <marker date="1416487253000" expanded="true" signature="4931:4989" placeholder="SELECT id FR..subscribers..." />
+            <marker date="1416487253000" expanded="true" signature="6529:6972" placeholder="INSERT INTO ..." />
+            <marker date="1416487253000" expanded="true" signature="6619:6972" placeholder="SELECT email..subscriber_group..." />
+            <marker date="1416487253000" expanded="true" signature="8499:8537" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sql.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/commands/SendmailCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74552685" vertical-offset="180" max-vertical-offset="1065">
-          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-          <folding />
+        <state vertical-scroll-proportion="0.105367795" vertical-offset="487" max-vertical-offset="1470">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <marker date="1416487418000" expanded="true" signature="812:1221" placeholder="SELECT s.id ..sanding..." />
+            <marker date="1416487418000" expanded="true" signature="812:1224" placeholder="SELECT s.id ..sanding..." />
+          </folding>
         </state>
       </provider>
     </entry>

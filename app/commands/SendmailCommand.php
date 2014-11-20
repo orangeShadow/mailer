@@ -36,15 +36,23 @@ class SendmailCommand extends Command {
 	 * @return mixed
 	 */
 	public function fire()
-	{
+	{git
+        if (file_exists(__DIR__.'/../storage/logs/lock.txt')) return;
+        $h = fopen(__DIR__.'/../storage/logs/lock.txt',"w+");
         ini_set('max_execution_time', 600);
         $mails = DB::select('SELECT s.id as id,s.email as email,t.header as header,t.footer as footer,m.content as content,m.title as title
                             FROM mailer.sanding as s
                             LEFT JOIN mailer.mailings as m on(s.mailing_id = m.id)
                             LEFT JOIN mailer.templates as t on(m.template_id = t.id)
                             WHERE s.stop=0
-                            LIMIT 50');
+                            LIMIT 100');
+
         $toDelete = array();
+        foreach($mails as $mail){
+            $toDelete[]=$mail->id;
+        }
+        Sanding::destroy($toDelete);
+
         foreach($mails as $mail){
             $email = $mail->email;
             $header = $mail->header;
@@ -55,10 +63,8 @@ class SendmailCommand extends Command {
             {
                 $message->to($email)->subject($title);
             });
-            $toDelete[]=$mail->id;
         }
-
-        Sanding::destroy($toDelete);
+        unlink(__DIR__.'/../storage/logs/lock.txt');
 	}
 
 	/**
