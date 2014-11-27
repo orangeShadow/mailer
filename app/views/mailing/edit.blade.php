@@ -36,6 +36,7 @@
             <div class="form-group">
                 {{Form::token()}}
                 {{ Form::submit(trans('mailing.save'),array('class'=>'btn btn-default'))}}
+                <a target="_blank" class="btn btn-primary" href="{{URL::action('MailingController@show',array('id'=>$mailing->id))}}">{{trans('templates.preview')}}</a>
             </div>
         {{ Form::close()}}
     </div>

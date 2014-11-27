@@ -57,7 +57,9 @@ class MailingController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		$mailing = Mailing::find($id);
+        $template = Template::find($mailing->template_id);
+        return View::make('mailing.show')->with(compact('mailing','template'));
 	}
 
 	/**
