@@ -51,7 +51,10 @@ class SendmailCommand extends Command {
         foreach($mails as $mail){
             $toDelete[]=$mail->id;
         }
-        Sanding::destroy($toDelete);
+        if(!empty($toDelete)){
+            Sanding::destroy($toDelete);
+        }
+
 
         foreach($mails as $mail){
             $email = $mail->email;
