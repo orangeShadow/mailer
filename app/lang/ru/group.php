@@ -16,4 +16,5 @@ return array(
     'messageDelete'=>'Удалить эту группу?',
     'destroy'=>'Группа :id удалена',
     'errorDelete'=>'Ошибка удаления',
+    'countSubs'=>'Кол-во адресов в рассылке'
 );

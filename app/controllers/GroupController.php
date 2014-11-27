@@ -57,8 +57,13 @@ class GroupController extends \BaseController {
 	 */
 	public function show($id)
 	{
+        $count = 0;
 		$group = Group::findOrFail($id);
-        return View::make('group.show')->with(compact('group'));
+        $res = DB::select("SELECT count(*) as c FROM subscriber_group WHERE group_id = :id",array("id"=>$id));
+        if(!empty($res)){
+            $count = $res[0]->c;
+        }
+        return View::make('group.show')->with(compact('group','count'));
 	}
 
 	/**

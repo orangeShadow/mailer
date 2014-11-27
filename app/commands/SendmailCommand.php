@@ -36,7 +36,7 @@ class SendmailCommand extends Command {
 	 * @return mixed
 	 */
 	public function fire()
-	{git
+	{
         if (file_exists(__DIR__.'/../storage/logs/lock.txt')) return;
         $h = fopen(__DIR__.'/../storage/logs/lock.txt',"w+");
         ini_set('max_execution_time', 600);
