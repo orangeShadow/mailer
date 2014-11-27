@@ -9,7 +9,7 @@
 </head>
 <body>
 {{$template->header}}
-{{$mailing->contentпше }}
+{{$mailing->content}}
 {{$template->footer}}
 </body>
 </html>
