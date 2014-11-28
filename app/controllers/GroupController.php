@@ -63,7 +63,12 @@ class GroupController extends \BaseController {
         if(!empty($res)){
             $count = $res[0]->c;
         }
-        return View::make('group.show')->with(compact('group','count'));
+        $subscribers = Subscriber::whereIn("id",function($query) use ($id){
+            $query->select('subscriber_id')
+                ->from('subscriber_group')
+                ->where('group_id',$id);
+        })->paginate(50);
+        return View::make('group.show')->with(compact('group','count','subscribers'));
 	}
 
 	/**
