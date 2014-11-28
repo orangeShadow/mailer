@@ -40,6 +40,13 @@ class MailingController extends \BaseController {
             $mailing = new Mailing(Input::except('group_id'));
             $mailing->groups=$groups;
             if ($mailing->save()){
+                if(Input::hasFile('file_path')){
+                    $path = base_path().'/public/files/';
+                    $name = $filename = Str::random(20) . '.' . Input::file('file_path')->guessExtension();
+                    Input::file('file_path')->move($path,$name);
+                    $mailing->file_path = $path.$name;
+                    $mailing->save();
+                }
                 Session::flash('mailing.create',trans('mailing.messageCreate',array('id'=>$mailing->id)));
                 return Redirect::to(URL::action('MailingController@index'));
             }
@@ -91,9 +98,22 @@ class MailingController extends \BaseController {
             $mailing = Mailing::findOrFail($id);
             $mailing->template_id = Input::get('template_id');
             $mailing->content = Input::get('content');
+            $mailing->comment = Input::get('comment');
             $mailing->groups=$groups;
 
             if ($mailing->save()){
+
+                if($mailing->file_path){
+                    unset($mailing->file_path);
+                }
+
+                if(Input::hasFile('file_path')){
+                    $path = base_path().'/public/files/';
+                    $name = $filename = Str::random(20) . '.' . Input::file('file_path')->guessExtension();
+                    Input::file('file_path')->move($path,$name);
+                    $mailing->file_path = $path.$name;
+                    $mailing->save();
+                }
                 Session::flash('mailing.edit',trans('mailing.messageEdit',array('id'=>$id)));
                 return Redirect::to(URL::action('MailingController@edit',array('id'=>$id)));
             }

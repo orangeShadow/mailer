@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('title')
-{{trans('mailing.createMailing')}};
+{{trans('mailing.createMailing')}}
 @stop
 
 @section('content')
@@ -10,7 +10,7 @@
         @if(Session::has('mailing.create'))
         <div class="alert alert-info">{{Session::get('mailing.edit')}}</div>
         @endif
-        {{ Form::open(array('url' => URL::action('MailingController@update',array("id"=>$mailing->id)),'method'=>"PUT"))}}
+        {{ Form::open(array('url' => URL::action('MailingController@update',array("id"=>$mailing->id)),'method'=>"PUT","files"=>"true"))}}
             <?$titleError = $errors->first('title')?>
             <div class="form-group @if(!empty($titleError)) {{'has-error'}} @endif">
                 {{Form::label(trans('mailing.title'),'',array('class'=>'control-label'))}}
@@ -18,6 +18,12 @@
                 {{Form::hidden('title',$mailing->title)}}
 
             </div>
+            <?$commentError = $errors->first('comment')?>
+            <div class="form-group @if(!empty($commentError)) {{'has-error'}} @endif">
+                {{Form::label(trans('mailing.comment'),'',array('class'=>'control-label'))}}
+                {{Form::textarea('comment',$mailing->comment,array('class'=>'form-control'))}}
+            </div>
+
             <?$templateError = $errors->first('template_id')?>
             <div class="form-group @if(!empty($templateError)) {{'has-error'}} @endif">
                 {{Form::label(trans('mailing.template'),'',array('class'=>'control-label'))}}
@@ -32,6 +38,14 @@
             <div class="form-group @if(!empty($contentError)) {{'has-error'}} @endif">
                 {{Form::label(trans('mailing.content'),'',array('class'=>'control-label'))}}
                 {{Form::textarea('content',$mailing->content,array('class'=>'form-control redactor'))}}
+            </div>
+            <?$contentFile = $errors->first('file_path');?>
+            <div class="form-group @if(!empty($contentFile)) {{'has-error'}} @endif">
+                {{Form::label(trans('mailing.file'),'',array('class'=>'control-label'))}}
+                {{Form::file('file_path','',array('class'=>'form-control'))}}
+                @if(!empty($mailing->file_path))
+                {{$mailing->file_path}}
+                @endif
             </div>
             <div class="form-group">
                 {{Form::token()}}

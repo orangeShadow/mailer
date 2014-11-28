@@ -40,34 +40,50 @@ class SendmailCommand extends Command {
         if (file_exists(__DIR__.'/../storage/logs/lock.txt')) return;
         $h = fopen(__DIR__.'/../storage/logs/lock.txt',"w+");
         ini_set('max_execution_time', 600);
-        $mails = DB::select('SELECT s.id as id,s.email as email,t.header as header,t.footer as footer,m.content as content,m.title as title
-                            FROM mailer.sanding as s
-                            LEFT JOIN mailer.mailings as m on(s.mailing_id = m.id)
-                            LEFT JOIN mailer.templates as t on(m.template_id = t.id)
-                            WHERE s.stop=0
-                            LIMIT 100');
+        try{
 
-        $toDelete = array();
-        foreach($mails as $mail){
-            $toDelete[]=$mail->id;
-        }
-        if(!empty($toDelete)){
-            Sanding::destroy($toDelete);
-        }
+            $mails = DB::select('SELECT s.id as id,s.email as email,t.header as header,t.footer as footer,m.content as content,m.title as title, m.file_path as file
+                                FROM mailer.sanding as s
+                                LEFT JOIN mailer.mailings as m on(s.mailing_id = m.id)
+                                LEFT JOIN mailer.templates as t on(m.template_id = t.id)
+                                WHERE s.stop=0
+                                LIMIT 100');
+            var_dump($mails);
+            $toDelete = array();
+            foreach($mails as $mail){
+                $toDelete[]=$mail->id;
+            }
+            if(!empty($toDelete)){
+                Sanding::destroy($toDelete);
+            }
 
 
-        foreach($mails as $mail){
-            $email = $mail->email;
-            $header = $mail->header;
-            $footer = $mail->footer;
-            $content = $mail->content;
-            $title = $mail->title;
-            Mail::send('emails.template',compact('title','header','footer','content'), function($message) use ($email,$title)
-            {
-                $message->to($email)->subject($title);
-            });
+            foreach($mails as $mail){
+                $email = $mail->email;
+                $header = $mail->header;
+                $footer = $mail->footer;
+                $content = $mail->content;
+                $title = $mail->title;
+                $file = $mail->file;
+                Mail::send('emails.template',compact('title','header','footer','content'), function($message) use ($email,$title,$file)
+                {
+                    if(empty($file)){
+                        $message->to($email)->subject($title);
+                    }else{
+                        $message->to($email);
+                        $message->subject($title);
+                        $message->attach($file);
+                    }
+
+                },true);
+            }
+            unlink(__DIR__.'/../storage/logs/lock.txt');
+        }catch(Exception $e){
+            echo $e->getMessage()."\n";
+            echo $e->GetLine();
+            unlink(__DIR__.'/../storage/logs/lock.txt');
         }
-        unlink(__DIR__.'/../storage/logs/lock.txt');
+
 	}
 
 	/**
