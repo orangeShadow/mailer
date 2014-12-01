@@ -22,7 +22,7 @@
                 <tr>
                     <th style="width:50px;">#</th>
                     <th>{{trans('mailing.title')}}</th>
-                    <th style="width:150px;">{{trans('mailing.updatedAt')}}</th>
+                    <th style="width:150px;">{{trans('mailing.comment')}}</th>
                     <th style="width:185px;"></th>
                 </tr>
                 </thead>
@@ -32,7 +32,7 @@
                     <tr>
                         <td>{{$mailing->id}}</td>
                         <td>{{$mailing->title}}</td>
-                        <td>{{$mailing->update_at}}</td>
+                        <td>{{$mailing->comment}}</td>
                         <td>
                             {{Form::open(array('url' => URL::action('MailingController@destroy',array('id'=>$mailing->id)), 'method' => 'delete','style'=>'display:inline-block')) }}
                                 <button onClick="if(!confirm('{{trans('mailing.messageDelete')}}')) return false;" type="submit" class="btn btn-danger btn-mini"><i class="fa fa-trash-o"></i></button>

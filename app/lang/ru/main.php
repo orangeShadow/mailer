@@ -17,5 +17,6 @@ return array(
     "AddGroup"=>"Добавить группу",
     "GroupList"=>"Список групп",
     "SubscribersGroup"=>"Группы подписчиков",
-    "fromAPI"=>"Группы по API"
+    "fromAPI"=>"Группы по API",
+    "fromCSV"=>"Группы по CSV"
 );

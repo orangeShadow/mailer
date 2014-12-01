@@ -177,7 +177,6 @@ Route::group(array('before' => 'auth'), function(){
 
         }
     });
-
     Route::get('/mailing/stop',function(){
         $id=Input::get('id',false);
         if($id){
@@ -195,7 +194,6 @@ Route::group(array('before' => 'auth'), function(){
             }
         }
     });
-
     Route::get('/mailing/clean',function(){
         $id=Input::get('id',false);
         if($id){
@@ -212,6 +210,38 @@ Route::group(array('before' => 'auth'), function(){
                 return ;
             }
         }
+    });
+
+    Route::get('/group/fromCSV',function(){
+        return View::make('group.csv');
+    });
+    Route::post('/group/fromCSV',function(){
+        if (Input::hasFile('csv'))
+        {
+            $file = Input::file('csv');
+            $h = fopen($file->getRealPath(),'r');
+            DB::delete(DB::raw("DELETE FROM subscriber_group WHERE group_id =".Input::get('group_id')));
+            while($row = fgets($h)){
+                try{
+                    $res = DB::select(DB::raw('SELECT * FROM subscribers WHERE email like "%'.trim($row).'%"'));
+                    if(!empty($res[0])){
+                        $id = $res[0]->id;
+                    }else{
+                        $dt = new DateTime();
+                        $id = DB::table('subscribers')->insertGetId(array('email'=>$row,'created_at'=>$dt->format("Y-m-d H:i:s"),'place'=>'csv'));
+                    }
+                    if(!empty($id)){
+                        DB::table('subscriber_group')->insert(array('subscriber_id'=>$id,'group_id'=>Input::get('group_id')));
+                    }
+                }catch(Exception $e){
+                    var_dump($e);
+                    continue;
+                }
+            }
+            fclose($h);
+        }
+        Session::flash('subscriber.csv',trans('subscriber.messageCSV'));
+        return Redirect::to(URL::action('SubscriberController@index'));
     });
 
     Route::controller('filemanager', 'FilemanagerLaravelController');
@@ -242,31 +272,6 @@ Route::group(array('before' => 'auth'), function(){
 
         }
         return Redirect::to(URL::action("SubscriberController@index"));
-    });
-
-    Route::get('/addSubscriberCSV',function(){
-        return View::make('group.addsubscriberCSV');
-    });
-
-    Route::post('/addSubscriberCSV',function(){
-        if (Input::hasFile('csv'))
-        {
-            $file = Input::file('csv');
-            $h = fopen($file->getRealPath(),'r');
-            while($row = fgets($h)){
-                try{
-                    $id = DB::table('subscribers')->insertGetId(array('email'=>$row,'place'=>'csv'));
-                    DB::table('subscriber_group')->insert(array('subscriber_id'=>$id,'group_id'=>Input::get('group_id')));
-                    exit();
-                }catch(Exception $e){
-                    continue;
-                }
-            }
-            fclose($h);
-
-        }
-        Session::flash('subscriber.csv',trans('subscriber.messageCSV'));
-        return Redirect::to(URL::action('SubscriberController@index'));
     });
 
     Route::get('/sql',function(){

@@ -59,7 +59,7 @@ class GroupController extends \BaseController {
 	{
         $count = 0;
 		$group = Group::findOrFail($id);
-        $res = DB::select("SELECT count(*) as c FROM subscriber_group WHERE group_id = :id",array("id"=>$id));
+        $res = DB::select("SELECT count(*) as c FROM subscriber_group as sg LEFT JOIN subscribers as s  on s.id = sg.subscriber_id and deleted_at is null WHERE group_id=:id",array("id"=>$id));
         if(!empty($res)){
             $count = $res[0]->c;
         }

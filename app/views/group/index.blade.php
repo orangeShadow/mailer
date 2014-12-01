@@ -20,6 +20,7 @@
                     <th style="width:50px;">#</th>
                     <th>{{trans('title')}}</th>
                     <th style="width:150px;">{{trans('group.desc')}}</th>
+                    <th style="width:150px;">Кол-во</th>
                     <th style="width:150px;"></th>
                 </tr>
                 </thead>
@@ -30,6 +31,7 @@
                     <td>{{$group->id}}</td>
                     <td>{{$group->title}}</td>
                     <td>{{$group->updated_at}}</td>
+                    <td><?$res = DB::select(DB::raw("SELECT count(*) as c FROM subscriber_group as sg LEFT JOIN subscribers as s  on s.id = sg.subscriber_id and deleted_at is null WHERE group_id=".$group->id));echo $res[0]->c;?></td>
                     <td>
                         <a href="{{URL::action('GroupController@edit',array('id'=>$group->id))}}" class="btn btn-default btn-mini"><i class="fa fa-edit"></i></a>
                         <a href="{{URL::action('GroupController@show',array('id'=>$group->id))}}" class="btn btn-default btn-mini" target="_blank"><i class="fa fa-eye"></i></a>
