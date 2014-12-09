@@ -11,12 +11,11 @@
             <?$titleError = $errors->first('title')?>
             <div class="form-group @if(!empty($titleError)) {{'has-error'}} @endif">
                 {{Form::label(trans('mailing.title'),'',array('class'=>'control-label'))}}
-                {{Form::text('title','',array('class'=>'form-control'))}}
+                {{Form::text('title',Input::get('title'),array('class'=>'form-control'))}}
             </div>
-            <?$commentError = $errors->first('comment')?>
-            <div class="form-group @if(!empty($commentError)) {{'has-error'}} @endif">
+            <div class="form-group">
                 {{Form::label(trans('mailing.comment'),'',array('class'=>'control-label'))}}
-                {{Form::textarea('comment',$mailing->comment,array('class'=>'form-control'))}}
+                {{Form::textarea('comment',Input::get('comment'),array('class'=>'form-control'))}}
             </div>
             <?$templateError = $errors->first('template_id')?>
             <div class="form-group @if(!empty($templateError)) {{'has-error'}} @endif">
