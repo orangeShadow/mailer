@@ -85,7 +85,9 @@
         	"enabled":true,
         	"maxWidth": 1280,
             "maxHeight": 1024
-        }
+        },
+        "relative_urls":false,
+        "remove_script_host":false
     },
     "videos": {
         "showVideoPlayer": true,
