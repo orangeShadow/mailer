@@ -46,7 +46,7 @@
                             @endif
 
                             @if($mailing->hasMailing())
-                                <a class="btn btn-default clean" href="/mailing/clean?id={{$mailing->id}}"><i class="fa fa-remove"></i></a>
+                                <a class="btn btn-default clean" href="/mailing/clean?id={{$mailing->id}}"><i class="fa fa-times"></i></a>
                             @endif
                         </td>
                     </tr>
