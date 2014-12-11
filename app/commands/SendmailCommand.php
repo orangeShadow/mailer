@@ -65,7 +65,7 @@ class SendmailCommand extends Command {
                 $content = $mail->content;
                 $title = $mail->title;
                 $file = $mail->file;
-                Mail::send('emails.template',compact('title','header','footer','content'), function($message) use ($email,$title,$file)
+                Mail::send('emails.template',compact('title','header','footer','content','email'), function($message) use ($email,$title,$file)
                 {
                     if(empty($file)){
                         $message->to($email)->subject($title);
