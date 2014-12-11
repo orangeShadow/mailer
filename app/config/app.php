@@ -120,10 +120,8 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'Way\Generators\GeneratorsServiceProvider',
         'Stolz\Assets\ManagerServiceProvider',
-        'Barryvdh\Debugbar\ServiceProvider',
         'Pqb\FilemanagerLaravel\FilemanagerLaravelServiceProvider',
 	),
 
@@ -192,8 +190,6 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
         'FilemanagerLaravel'=> 'Pqb\FilemanagerLaravel\Facades\FilemanagerLaravel',
-        'Debugbar'        => 'Barryvdh\Debugbar\Facade',
-
     ),
 
 );
