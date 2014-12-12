@@ -100,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailingController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MailingController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/MailingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46946564" vertical-offset="1269" max-vertical-offset="2265">
-              <caret line="101" column="57" selection-start-line="101" selection-start-column="57" selection-end-line="101" selection-end-column="57" />
+            <state vertical-scroll-proportion="-8.375" vertical-offset="1314" max-vertical-offset="2265">
+              <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
               <folding>
                 <marker date="1418369542000" expanded="true" signature="4294:4332" placeholder="DELETE FROM ..." />
               </folding>
@@ -122,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/mailing/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.208333" vertical-offset="106" max-vertical-offset="1035">
-              <caret line="25" column="18" selection-start-line="20" selection-start-column="12" selection-end-line="25" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.48473284" vertical-offset="106" max-vertical-offset="1035">
+              <caret line="24" column="94" selection-start-line="24" selection-start-column="94" selection-end-line="24" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -186,13 +186,13 @@
         <option value="$PROJECT_DIR$/app/views/emails/template.blade.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_11_28_121427_add_column_mailing.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2014_12_11_175553_add_from_colum_mailing.php" />
-        <option value="$PROJECT_DIR$/app/views/mailing/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/views/mailing/create.blade.php" />
         <option value="$PROJECT_DIR$/app/commands/SendmailCommand.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/views/sql.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/MailingController.php" />
+        <option value="$PROJECT_DIR$/app/views/mailing/edit.blade.php" />
       </list>
     </option>
   </component>
@@ -1124,14 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/mailing/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.208333" vertical-offset="106" max-vertical-offset="1035">
-          <caret line="25" column="18" selection-start-line="20" selection-start-column="12" selection-end-line="25" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/mailing/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.875" vertical-offset="15" max-vertical-offset="870">
@@ -1201,11 +1193,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/MailingController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46946564" vertical-offset="1269" max-vertical-offset="2265">
-          <caret line="101" column="57" selection-start-line="101" selection-start-column="57" selection-end-line="101" selection-end-column="57" />
+        <state vertical-scroll-proportion="-8.375" vertical-offset="1314" max-vertical-offset="2265">
+          <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
           <folding>
             <marker date="1418369542000" expanded="true" signature="4294:4332" placeholder="DELETE FROM ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/mailing/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48473284" vertical-offset="106" max-vertical-offset="1035">
+          <caret line="24" column="94" selection-start-line="24" selection-start-column="94" selection-end-line="24" selection-end-column="94" />
+          <folding />
         </state>
       </provider>
     </entry>
