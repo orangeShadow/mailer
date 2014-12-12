@@ -38,7 +38,7 @@
         <div class="alert alert-danger"><?var_dump($error)?></div>
     </div>
 </div>
-<?}?>
+<?}else{?>
 <div class="row">
     <div class="col-lg-12">
         <table class="table">
@@ -63,4 +63,5 @@
         </table>
     </div>
 </div>
+<?}?>
 @stop
