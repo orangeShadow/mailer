@@ -15,8 +15,6 @@
             <div class="form-group @if(!empty($titleError)) {{'has-error'}} @endif">
                 {{Form::label(trans('mailing.title'),'',array('class'=>'control-label'))}}
                 {{Form::text('title',$mailing->title,array('class'=>'form-control'))}}
-                {{Form::hidden('title',$mailing->title)}}
-
             </div>
             <?$fromEmailError = $errors->first('from_email')?>
             <div class="form-group @if(!empty($fromEmailError)) {{'has-error'}} @endif">
