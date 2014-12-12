@@ -99,6 +99,7 @@ class MailingController extends \BaseController {
             $mailing->template_id = Input::get('template_id');
             $mailing->content = Input::get('content');
             $mailing->comment = Input::get('comment');
+            $mailing->from_email = Input::get('from_email');
             $mailing->groups=$groups;
 
             if ($mailing->save()){
