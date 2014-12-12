@@ -96,6 +96,7 @@ class MailingController extends \BaseController {
         if (!$validator->fails()){
             $groups = implode(',',Input::get('group_id'));
             $mailing = Mailing::findOrFail($id);
+            $mailing->title= Input::get('title');
             $mailing->template_id = Input::get('template_id');
             $mailing->content = Input::get('content');
             $mailing->comment = Input::get('comment');

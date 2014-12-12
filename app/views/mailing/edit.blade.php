@@ -14,7 +14,7 @@
             <?$titleError = $errors->first('title')?>
             <div class="form-group @if(!empty($titleError)) {{'has-error'}} @endif">
                 {{Form::label(trans('mailing.title'),'',array('class'=>'control-label'))}}
-                {{Form::text('title',$mailing->title,array('class'=>'form-control','disabled'=>'disabled'))}}
+                {{Form::text('title',$mailing->title,array('class'=>'form-control'))}}
                 {{Form::hidden('title',$mailing->title)}}
 
             </div>
