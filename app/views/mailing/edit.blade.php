@@ -18,6 +18,12 @@
                 {{Form::hidden('title',$mailing->title)}}
 
             </div>
+            <?$fromEmailError = $errors->first('from_email')?>
+            <div class="form-group @if(!empty($fromEmailError)) {{'has-error'}} @endif">
+                {{Form::label(trans('mailing.from_email'),'',array('class'=>'control-label'))}}
+                <?$defaultFrom = Config::get('mail.from')["address"];?>
+                {{Form::text('from_email',Input::get('from_email',$defaultFrom),array('class'=>'form-control'))}}
+            </div>
             <?$commentError = $errors->first('comment')?>
             <div class="form-group @if(!empty($commentError)) {{'has-error'}} @endif">
                 {{Form::label(trans('mailing.comment'),'',array('class'=>'control-label'))}}

@@ -5,13 +5,15 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*",
-        "barryvdh/laravel-ide-helper": "1.*",
         "way/generators": "2.*",
-        "barryvdh/laravel-debugbar":"dev-master",
         "fzaninotto/faker": "1.*",
         "stolz/assets":"dev-master",
         "pqb/filemanager-laravel": "1.*"
 	},
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "1.*",
+        "barryvdh/laravel-debugbar":"dev-master"
+    },
 	"autoload": {
 		"classmap": [
 			"app/commands",

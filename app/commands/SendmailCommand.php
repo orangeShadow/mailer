@@ -42,13 +42,12 @@ class SendmailCommand extends Command {
         ini_set('max_execution_time', 600);
         try{
 
-            $mails = DB::select('SELECT s.id as id,s.email as email,t.header as header,t.footer as footer,m.content as content,m.title as title, m.file_path as file
+            $mails = DB::select('SELECT s.id as id,s.email as email,t.header as header,t.footer as footer,m.content as content,m.title as title, m.file_path as file,m.from_email as from_email
                                 FROM mailer.sanding as s
                                 LEFT JOIN mailer.mailings as m on(s.mailing_id = m.id)
                                 LEFT JOIN mailer.templates as t on(m.template_id = t.id)
                                 WHERE s.stop=0
                                 LIMIT 100');
-            var_dump($mails);
             $toDelete = array();
             foreach($mails as $mail){
                 $toDelete[]=$mail->id;
@@ -59,14 +58,18 @@ class SendmailCommand extends Command {
 
 
             foreach($mails as $mail){
+                $fromEmail = $mail->from_email;
                 $email = $mail->email;
                 $header = $mail->header;
                 $footer = $mail->footer;
                 $content = $mail->content;
                 $title = $mail->title;
                 $file = $mail->file;
-                Mail::send('emails.template',compact('title','header','footer','content','email'), function($message) use ($email,$title,$file)
+                Mail::send('emails.template',compact('title','header','footer','content','email'), function($message) use ($email,$title,$file,$fromEmail)
                 {
+                    if(!empty($fromEmail)){
+                        $message->from($fromEmail,"Goodline");
+;                    }
                     if(empty($file)){
                         $message->to($email)->subject($title);
                     }else{

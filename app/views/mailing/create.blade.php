@@ -13,6 +13,12 @@
                 {{Form::label(trans('mailing.title'),'',array('class'=>'control-label'))}}
                 {{Form::text('title',Input::get('title'),array('class'=>'form-control'))}}
             </div>
+            <?$fromEmailError = $errors->first('from_email')?>
+            <div class="form-group @if(!empty($fromEmailError)) {{'has-error'}} @endif">
+                {{Form::label(trans('mailing.from_email'),'',array('class'=>'control-label'))}}
+                <?$defaultFrom = Config::get('mail.from')["address"];?>
+                {{Form::text('from_email',Input::get('from_email',$defaultFrom),array('class'=>'form-control'))}}
+            </div>
             <div class="form-group">
                 {{Form::label(trans('mailing.comment'),'',array('class'=>'control-label'))}}
                 {{Form::textarea('comment',Input::get('comment'),array('class'=>'form-control'))}}

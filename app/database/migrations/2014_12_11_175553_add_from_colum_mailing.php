@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddColumnMailing extends Migration {
+class AddFromColumMailing extends Migration {
 
     /**
      * Run the migrations.
@@ -14,8 +14,7 @@ class AddColumnMailing extends Migration {
     {
         Schema::table('mailings', function($table)
         {
-            $table->string('file_path',250)->nullable();
-            $table->text('comment')->nullable();
+            $table->string('from_email',250)->nullable();
         });
     }
 
@@ -27,8 +26,7 @@ class AddColumnMailing extends Migration {
     public function down()
     {
         Schema::table('mailings',function($table){
-            $table->dropColumn('file_path');
-            $table->dropColumn('comment');
+            $table->dropColumn('from_email');
         });
     }
 

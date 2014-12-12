@@ -87,7 +87,8 @@
             "maxHeight": 1024
         },
         "relative_urls":false,
-        "remove_script_host":false
+        "remove_script_host":false,
+        "document_base_url ":"mailer.roumingu.net"
     },
     "videos": {
         "showVideoPlayer": true,

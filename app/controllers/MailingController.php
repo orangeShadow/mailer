@@ -33,7 +33,7 @@ class MailingController extends \BaseController {
 	 */
 	public function store()
 	{
-        $validator = Validator::make(Input::all(),array('title'=>'required','template_id'=>"required","group_id"=>'required','content'=>'required'));
+        $validator = Validator::make(Input::all(),array('title'=>'required','template_id'=>"required","group_id"=>'required','content'=>'required','from_email'=>"email"));
 
         if (!$validator->fails()){
             $groups = implode(',',Input::get('group_id'));
@@ -91,7 +91,7 @@ class MailingController extends \BaseController {
 	 */
 	public function update($id)
 	{
-        $validator = Validator::make(Input::all(),array('title'=>'required','template_id'=>"required","group_id"=>'required','content'=>'required'));
+        $validator = Validator::make(Input::all(),array('title'=>'required','template_id'=>"required","group_id"=>'required','content'=>'required','from_email'=>"email"));
 
         if (!$validator->fails()){
             $groups = implode(',',Input::get('group_id'));
