@@ -67,6 +67,8 @@ class SendmailCommand extends Command {
                 $file = $mail->file;
                 Mail::send('emails.template',compact('title','header','footer','content','email'), function($message) use ($email,$title,$file,$fromEmail)
                 {
+                    $message->getHeaders()->addTextHeader('List-Unsubscribe:', "<http://new.goodline.ru/unsubscribe.php?email={{$email}}>");
+
                     if(!empty($fromEmail)){
                         $message->from($fromEmail,"Goodline");
 ;                    }
