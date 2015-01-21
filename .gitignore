@@ -1,5 +1,9 @@
 app/config/local
 app/config/testing
+app/config/app.php
+app/config/database.php
+app/config/mail.php
+app/config/testing
 /bootstrap/compiled.php
 /vendor
 composer.phar
