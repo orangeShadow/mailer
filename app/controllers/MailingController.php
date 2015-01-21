@@ -10,7 +10,7 @@ class MailingController extends \BaseController {
 	 */
 	public function index()
 	{
-		$mailings = Mailing::paginate(20);
+		$mailings = Mailing::orderBy('id','desc')->paginate(20);
         return View::make('mailing.index')->with(compact('mailings'));
 	}
 
