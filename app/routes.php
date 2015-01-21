@@ -56,8 +56,14 @@ Route::group(array('before' => 'auth'), function(){
         if(isset($type) && !isset($groups)){
             if(Input::get('type')==0){
                 $res = \MyLibraries\CRoumingu::getKopilkaGroups();
-            }else{
+            }if(Input::get('type')==1){
                 $res = \MyLibraries\CRoumingu::getContragentsGroups();
+            }if(Input::get('type')==2){
+                $std = new stdClass();
+                $std->groupID=100;
+                $std->groupName="Все";
+                $res = new stdClass();
+                $res->data_array = array($std);
             }
             $html = '<div class="form-group">';
             $html.= '<label  class="col-sm-2 control-label">Выберите группу из API:</label>';
@@ -86,8 +92,11 @@ Route::group(array('before' => 'auth'), function(){
         }elseif(isset($type) && isset($groups) && isset($group_id)){
             if(Input::get('type')==0){
                 $res = \MyLibraries\CRoumingu::getKopilkaEmails(implode(',',$groups));
-            }else{
+            }elseif(Input::get('type')==1){
                 $res = \MyLibraries\CRoumingu::getContragentsEmails(implode(',',$groups));
+            }
+            else{
+                $res = \MyLibraries\CRoumingu::getCorpclientsEmails();
             }
             $resp = new stdClass();
             if($res->error == 1){
@@ -212,10 +221,12 @@ Route::group(array('before' => 'auth'), function(){
         }
     });
 
-    Route::get('/group/fromCSV',function(){
+    Route::get('/group/fromCSV',function()
+    {
         return View::make('group.csv');
     });
-    Route::post('/group/fromCSV',function(){
+    Route::post('/group/fromCSV',function()
+    {
         if (Input::hasFile('csv'))
         {
             $file = Input::file('csv');
@@ -249,13 +260,15 @@ Route::group(array('before' => 'auth'), function(){
     Route::resource('mailing', 'MailingController');
     Route::resource('subscriber', 'SubscriberController');
 
-    Route::get('/groupToSubscribe',function(){
+
+    Route::get('/groupToSubscribe',function()
+    {
         $groups = Group::all();
         $subscriber = Subscriber::all();
         return View::make('group.subscriber')->with(compact('groups','subscriber'));
     });
-
-    Route::post('/groupToSubscribe',function(){
+    Route::post('/groupToSubscribe',function()
+    {
         $group_id = Input::get('group_id');
         $subscribers= Input::get('subscriber_id',array());
 
@@ -273,11 +286,44 @@ Route::group(array('before' => 'auth'), function(){
         return Redirect::to(URL::action("SubscriberController@index"));
     });
 
-    Route::get('/sql',function(){
-       return View::make('sql');
+    /**
+     * Читска адресов
+     */
+    Route::get('/cleanEmail',function()
+    {
+        $badID = array();
+        $k =0;
+        $skip = 14000;
+        //while($skip<240000){
+            $subscribers  = Subscriber::skip($skip)->take(2000)->get();
+            if(!empty($subscribers)){
+                foreach($subscribers as $item){
+                    list($user, $domain) = explode("@", trim($item->email), 2);
+                    if (!checkdnsrr($domain,"MX") && !checkdnsrr($domain,"A")) {
+                        $badID[] = $item->id;
+                    }
+                    $k++;
+                }
+            }
+        if(count($badID)>0){
+            Subscriber::destroy($badID);
+        }
+            //$skip+=10000;
+        //}
+        echo "Всего: ".$k."<br>";
+        count($badID);
+        return;
     });
 
-    Route::post('/sql',function(){
+    /**
+     * SQL запрос
+     **/
+    Route::get('/sql',function()
+    {
+       return View::make('sql');
+    });
+    Route::post('/sql',function()
+    {
         $error=null;
         if(Input::get('q',false)){
             try{

@@ -1,5 +1,5 @@
-/app/config/local
-/app/config/testing
+app/config/local
+app/config/testing
 /bootstrap/compiled.php
 /vendor
 composer.phar
@@ -10,4 +10,4 @@ composer.lock
 Thumbs.db
 _ide_helper.php
 .idea/*
-/app/libraries/CRoumingu.php
+app/libraries/CRoumingu.php

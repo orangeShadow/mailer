@@ -10,8 +10,7 @@
             <div class="form-group">
                 <label  class="col-sm-2 control-label">Тип:</label>
                 <div class="col-sm-10">
-                    {{Form::select('type',[0=>'Копилка',1=>"Контрагенты"],null,array('class'=>'form-control'))}}
-
+                    {{Form::select('type',[0=>'Копилка',1=>"Контрагенты",2=>"Корпоративные"],null,array('class'=>'form-control'))}}
                 </div>
             </div>
         </div>
