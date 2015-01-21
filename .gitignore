@@ -10,4 +10,4 @@ composer.lock
 Thumbs.db
 _ide_helper.php
 .idea/*
-/app/libraries/*
+/app/libraries/CRoumingu.php
