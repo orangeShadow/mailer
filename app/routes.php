@@ -254,6 +254,13 @@ Route::group(array('before' => 'auth'), function(){
         return Redirect::to(URL::action('SubscriberController@index'));
     });
 
+    Route::post('/group/user_remove',function(){
+        $id = Input::get('id');
+        $group_id = Input::get('group_id');
+        DB::table('subscriber_group')->where(array('subscriber_id'=>$id,'group_id'=>$group_id))->delete();
+        return "Y";
+    });
+
     Route::controller('filemanager', 'FilemanagerLaravelController');
     Route::resource('templates', 'TemplatesController');
     Route::resource('group', 'GroupController');

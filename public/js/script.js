@@ -72,4 +72,19 @@ $(function(){
             }
         });
     });
+
+
+    $('.remove-u-g').click(function(){
+        var that = $(this);
+        var el = {};
+        el.id = that.attr('data-id');
+        el.group_id = that.attr('data-group');
+        $.post('/group/user_remove',el,function(data){
+            if(data=="Y"){
+                that.parents('tr').remove();
+            }else{
+                alert('Произошла ошибка');
+            }
+        });
+    });
 })

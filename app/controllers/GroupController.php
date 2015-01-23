@@ -68,7 +68,7 @@ class GroupController extends \BaseController {
                 ->from('subscriber_group')
                 ->where('group_id',$id);
         })->paginate(50);
-        return View::make('group.show')->with(compact('group','count','subscribers'));
+        return View::make('group.show')->with(compact('group','count','subscribers','id'));
 	}
 
 	/**
