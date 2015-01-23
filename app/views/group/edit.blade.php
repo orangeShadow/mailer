@@ -24,6 +24,11 @@
             {{Form::textarea('desc',$group->desc,array('class'=>'form-control'))}}
         </div>
 
+        <div class="form-group">
+            {{Form::label('Добавить пользователей','',array('class'=>'control-label'))}}
+            {{Form::textarea('email_list',null,array('class'=>'form-control'))}}
+        </div>
+
         <hr>
         {{Form::submit(trans('group.save'),array('class'=>'btn btn-success'))}}
         <a class="btn btn-default" href="{{URL::action('GroupController@edit',array('id'=>$group->id))}}">{{trans('group.cancel')}}</a>
