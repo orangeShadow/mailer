@@ -369,3 +369,19 @@ Route::get('/unsubscribe',function(){
     echo json_encode($resp,JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
     return;
 });
+
+Route::get('addemail',function(){
+    $validator = Validator::make(Input::except('group_id'),array('email'=>'required|email|unique:subscribers'));
+    if (!$validator->fails()){
+        $subscriber = new Subscriber(Input::except('group_id'));
+        if ($subscriber->save()){
+            Session::flash('subscriber.create',trans('subscriber.messageCreate',array('id'=>$subscriber->id)));
+            DB::table('subscriber_group')->insert(array('subscriber_id'=>$subscriber->id,'group_id'=>2));
+            $mes = new stdClass();
+            $mes->error =0;
+            return json_encode($mes);
+        }
+    }else{
+        return $validator->errors()->toJson();
+    }
+});
