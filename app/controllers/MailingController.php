@@ -11,7 +11,15 @@ class MailingController extends \BaseController {
 	public function index()
 	{
 		$mailings = Mailing::orderBy('id','desc')->paginate(20);
-        return View::make('mailing.index')->with(compact('mailings'));
+        $sendProcent = array();
+        foreach($mailings as $mailing)
+        {
+            $cS = DB::table('sanding')->where('mailing_id',$mailing->id)->count('*');
+            $cM = DB::table('subscriber_group')->whereIn("group_id",explode(",",$mailing->groups))->count('*');
+            $sendProcent[$mailing->id] = $cS*100/$cM;
+        }
+
+        return View::make('mailing.index')->with(compact('mailings','sendProcent'));
 	}
 
 	/**

@@ -47,6 +47,7 @@
 
                             @if($mailing->hasMailing())
                                 <a class="btn btn-default clean" href="/mailing/clean?id={{$mailing->id}}"><i class="fa fa-times"></i></a>
+                                <?if(!empty($sendProcent[$mailing->id])){?> <span><?=$sendProcent[$mailing->id]?>  %</span><?}?>
                             @endif
                         </td>
                     </tr>
