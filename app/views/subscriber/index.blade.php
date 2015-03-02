@@ -20,6 +20,7 @@
                     <th style="width:50px;">#</th>
                     <th>{{trans('email')}}</th>
                     <th>{{trans('main.place')}}</th>
+                    <th>{{trans('main.groups')}}</th>
                     <th style="width:150px;">{{trans('subscriber.createAt')}}</th>
                     <th style="width:50px;"></th>
                 </tr>
@@ -41,7 +42,16 @@
                 <tr>
                     <td>{{$subscriber->id}}</td>
                     <td>{{$subscriber->email}}</td>
-                    <th>{{$subscriber->place}}</th>
+                    <td>{{$subscriber->place}}</td>
+                    <td>
+                        <?
+                        $gr_list = array();
+                        foreach($subscriber->groups as $gr){
+                            $gr_list[]=$gr->title;
+                        }
+                            echo implode(",",$gr_list);
+                        ?>
+                    </td>
                     <td>{{$subscriber->created_at}}</td>
                     <td>
                         <?/*<a href="{{URL::action('SubscriberController@edit',array('id'=>$subscriber->id))}}" class="btn btn-default btn-mini"><i class="fa fa-edit"></i></a>*/   ?>
