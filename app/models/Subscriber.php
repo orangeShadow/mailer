@@ -9,6 +9,6 @@ class Subscriber extends \Eloquent {
 
     public function groups()
     {
-        return $this->belongsToMany('Group','subscriber_groups','subscriber_id');
+        return $this->belongsToMany('Group','subscriber_group','subscriber_id');
     }
 }
