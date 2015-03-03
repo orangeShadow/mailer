@@ -50,7 +50,7 @@ class MailingController extends \BaseController {
             if ($mailing->save()){
                 if(Input::hasFile('file_path')){
                     $path = base_path().'/public/files/';
-                    $name = $filename = Str::random(20) . '.' . Input::file('file_path')->guessExtension();
+                    $name = $filename = Input::file('file_path')->getClientOriginalName();
                     Input::file('file_path')->move($path,$name);
                     $mailing->file_path = $path.$name;
                     $mailing->save();
@@ -119,7 +119,7 @@ class MailingController extends \BaseController {
 
                 if(Input::hasFile('file_path')){
                     $path = base_path().'/public/files/';
-                    $name = $filename = Str::random(20) . '.' . Input::file('file_path')->guessExtension();
+                    $name = $filename = Input::file('file_path')->getClientOriginalName();
                     Input::file('file_path')->move($path,$name);
                     $mailing->file_path = $path.$name;
                     $mailing->save();
