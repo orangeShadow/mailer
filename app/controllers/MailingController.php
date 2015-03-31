@@ -16,7 +16,8 @@ class MailingController extends \BaseController {
         {
             $cS = DB::table('sanding')->where('mailing_id',$mailing->id)->count('*');
             $cM = DB::table('subscriber_group')->whereIn("group_id",explode(",",$mailing->groups))->count('*');
-            $sendProcent[$mailing->id] = round($cS*100/$cM,2);
+            if(!empty($cM))
+                $sendProcent[$mailing->id] = round($cS*100/$cM,2);
         }
 
         return View::make('mailing.index')->with(compact('mailings','sendProcent'));
