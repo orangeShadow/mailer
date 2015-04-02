@@ -44,7 +44,7 @@ class ClearGroup2 extends Command {
             $els = DB::select(DB::raw("SELECT s.id  as id FROM subscribers as s JOIN  subscriber_group as sg on  s.id = sg.subscriber_id and s.email like '".$row->email."%' and sg.group_id in(2)"));
             foreach($els as $el)
             {
-                $ids[] = $el["id"];
+                $ids[] = $el->id;
                 $k++;
             }
         }
