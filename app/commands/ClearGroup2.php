@@ -37,14 +37,15 @@ class ClearGroup2 extends Command {
 	 */
 	public function fire()
 	{
+        $ids = array();
         $k=0;
         $res =  DB::select(DB::raw("SELECT id,email FROM subscribers as s JOIN  subscriber_group as sg on  s.id = sg.subscriber_id  and sg.group_id in(45,46,47)"));
         foreach($res as $row){
             $email = trim($row->email);
 
             if(empty($email) || strlen($email)<10) continue;
-            $ids = array();
-            $els = DB::select(DB::raw("SELECT id,email FROM subscribers as s JOIN  subscriber_group as sg on  s.id = sg.subscriber_id and s.email like '".$email."%' and sg.group_id in(2)"));
+
+            $els = DB::select(DB::raw("SELECT id,email,group_id FROM subscribers as s JOIN  subscriber_group as sg on  s.id = sg.subscriber_id and s.email like '".$email."%' and sg.group_id in(2)"));
             foreach($els as $el)
             {
                 echo "Искомый: ".$email.", ".$el->email.", ".$el->id."\n";
@@ -55,7 +56,7 @@ class ClearGroup2 extends Command {
 
         }
         //echo $k;
-        echo count($ids);
+        //Subscriber::destroy($ids);
 	}
 
 	/**
