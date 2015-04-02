@@ -42,17 +42,17 @@ class ClearGroup2 extends Command {
         foreach($res as $row){
             $email = trim($row->email);
             echo "Искомый: ".$email."\n";
-            if(!empty($emial)) continue;
+            if(empty($email) || strlen($email)<2) continue;
             $ids = array();
             $els = DB::select(DB::raw("SELECT s.id  as id,email FROM subscribers as s JOIN  subscriber_group as sg on  s.id = sg.subscriber_id and s.email like '".$email."%' and sg.group_id in(2) LIMIT 50000"));
             foreach($els as $el)
             {
-                //echo $el->email;
-
+                $ids[] = $el->id;
             }
             $k++;
         }
         echo $k;
+        print_r_pre($ids);
 	}
 
 	/**
