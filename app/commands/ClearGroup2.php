@@ -41,6 +41,7 @@ class ClearGroup2 extends Command {
         $res =  DB::select(DB::raw("SELECT id,email FROM subscribers as s JOIN  subscriber_group as sg on  s.id = sg.subscriber_id  and sg.group_id in(45,46,47)"));
         foreach($res as $row){
             $email = trim($row->email);
+            echo $email."-";
             $ids = array();
             $els = DB::select(DB::raw("SELECT s.id  as id,email FROM subscribers as s JOIN  subscriber_group as sg on  s.id = sg.subscriber_id and s.email like '".$email."%' and sg.group_id in(2) LIMIT 50000"));
             foreach($els as $el)
