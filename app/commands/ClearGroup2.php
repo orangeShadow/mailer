@@ -11,14 +11,14 @@ class ClearGroup2 extends Command {
 	 *
 	 * @var string
 	 */
-	protected $name = 'user:clear-subscribers2';
+	protected $name = 'user:cleargr';
 
 	/**
 	 * The console command description.
 	 *
 	 * @var string
 	 */
-	protected $description = 'Command description.';
+	protected $description = 'Edit group 2';
 
 	/**
 	 * Create a new command instance.
@@ -63,7 +63,7 @@ class ClearGroup2 extends Command {
 	 */
 	protected function getArguments()
 	{
-
+        return array();
 	}
 
 	/**
@@ -73,7 +73,7 @@ class ClearGroup2 extends Command {
 	 */
 	protected function getOptions()
 	{
-
+        return array();
 	}
 
 }
