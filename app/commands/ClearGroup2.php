@@ -44,14 +44,15 @@ class ClearGroup2 extends Command {
 
             if(empty($email) || strlen($email)<10) continue;
             $ids = array();
-            $els = DB::select(DB::raw("SELECT s.id  as id,email FROM subscribers as s JOIN  subscriber_group as sg on  s.id = sg.subscriber_id and s.email like '".$email."%' and sg.group_id in(2)"));
+            $els = DB::select(DB::raw("SELECT id,email FROM subscribers as s JOIN  subscriber_group as sg on  s.id = sg.subscriber_id and s.email like '".$email."%' and sg.group_id in(2)"));
             foreach($els as $el)
             {
                 echo "Искомый: ".$email.", ".$el->email."\n";
 
                 $ids[] = $el->id;
+                $k++;
             }
-            $k++;
+
         }
         echo $k;
         print_r($ids);
