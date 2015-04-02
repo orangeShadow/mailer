@@ -11,7 +11,7 @@ class ClearGroup2 extends Command {
 	 *
 	 * @var string
 	 */
-	protected $name = 'command:name';
+	protected $name = 'user:clear-subscribers2';
 
 	/**
 	 * The console command description.
