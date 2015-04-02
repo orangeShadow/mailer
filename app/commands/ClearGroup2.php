@@ -38,21 +38,17 @@ class ClearGroup2 extends Command {
 	public function fire()
 	{
         $k=0;
-        $res =  DB::select(DB::raw("SELECT id,email,group_id FROM subscribers as s JOIN  subscriber_group as sg on  s.id = sg.subscriber_id  and sg.group_id in(45,46,47)"));
+        $res =  DB::select(DB::raw("SELECT id,email FROM subscribers as s JOIN  subscriber_group as sg on  s.id = sg.subscriber_id  and sg.group_id in(45,46,47)"));
         foreach($res as $row){
-            $els = Subscriber::where('email','like',$row->email."%")->get(['id']);
+            $ids = array();
+            $els = DB::select(DB::raw("SELECT s.id  as id FROM subscribers as s JOIN  subscriber_group as sg on  s.id = sg.subscriber_id and s.email like '".$row["email"]."%' and sg.group_id in(2)"));
             foreach($els as $el)
             {
-                foreach($el->groups as $gr)
-                {
-                    if($gr->id == 2){
-                        $el->delete();
-                        $k++;
-                    }
-
-                }
+                $ids[] = $el["id"];
+                $k++;
             }
         }
+        print_r($ids);
         echo $k;
 	}
 
