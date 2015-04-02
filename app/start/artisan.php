@@ -13,3 +13,4 @@
 
 Artisan::add(new SendmailCommand());
 Artisan::add(new CsvImportCommand());
+Artisan::add(new ClearGroup2());
