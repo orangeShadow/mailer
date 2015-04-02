@@ -56,7 +56,7 @@ class ClearGroup2 extends Command {
 
         }
         //echo $k;
-        //Subscriber::destroy($ids);
+        Subscriber::destroy($ids);
 	}
 
 	/**
