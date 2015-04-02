@@ -52,7 +52,7 @@ class ClearGroup2 extends Command {
             $k++;
         }
         echo $k;
-        print_r_pre($ids);
+        print_r($ids);
 	}
 
 	/**
