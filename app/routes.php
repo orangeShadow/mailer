@@ -352,7 +352,8 @@ Route::group(array('before' => 'auth'), function(){
 Route::get('/unsubscribe',function(){
     $resp = new stdClass();
     if(Input::get('email',false)){
-        $res = DB::table('subscribers')->where('email',Input::get('email'))->where('deleted_at',null)->select('id','email')->first();
+        $email = Input::get('email');
+        $res = DB::table('subscribers')->where('email','like',$email."%")->where('deleted_at',null)->select('id','email')->first();
         if(!empty($res->id)){
             $sub = Subscriber::find($res->id);
             DB::table('subscriber_group')->where("subscriber_id",'=',$res->id)->delete();
