@@ -17,7 +17,7 @@ class TemplatesController extends \BaseController {
 	public function index()
 	{
         $title = "Список шаблонов";
-        $templates = Template::all();
+        $templates = Template::orderBy('id','desc')->paginate(20);
 		return View::make('templates.index')->with(compact('title','templates'));
 	}
 
