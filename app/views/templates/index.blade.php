@@ -19,6 +19,7 @@
                 <tr>
                     <th>#</th>
                     <th>{{trans('title')}}</th>
+                    <th style="width:150px;">{{trans('createdAt')}}</th>
                     <th style="width:150px;">{{trans('updatedAt')}}</th>
                     <th style="width:150px;"></th>
                 </tr>
@@ -29,6 +30,7 @@
                     <tr>
                         <td>{{$template->id}}</td>
                         <td>{{$template->title}}</td>
+                        <td>{{$template->created_at}}</td>
                         <td>{{$template->updated_at}}</td>
                         <td>
                             <a href="{{URL::action('TemplatesController@edit',array('id'=>$template->id))}}" class="btn btn-default btn-mini"><i class="fa fa-edit"></i></a>
@@ -43,6 +45,7 @@
                 </tbody>
             </table>
         </div>
+        {{$templates->links()}}
     </div>
 </div>
 @stop
