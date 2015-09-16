@@ -234,6 +234,10 @@ Route::group(array('before' => 'auth'), function(){
             DB::delete(DB::raw("DELETE FROM subscriber_group WHERE group_id =".Input::get('group_id')));
             while($row = fgets($h)){
                 try{
+                    $validator = Validator::make(array("email"=>trim($row)),array("email"=>"email"));
+
+                    if($validator->fails()) continue;
+
                     $res = DB::select(DB::raw('SELECT * FROM subscribers WHERE email="'.trim($row).'" or email like "%'.trim($row).'%"') );
                     if(!empty($res[0])){
                         $id = $res[0]->id;
@@ -245,7 +249,7 @@ Route::group(array('before' => 'auth'), function(){
                         DB::table('subscriber_group')->insert(array('subscriber_id'=>$id,'group_id'=>Input::get('group_id')));
                     }
                 }catch(Exception $e){
-                    continue;
+                    echo $e->GetMessage();
                 }
             }
             fclose($h);
