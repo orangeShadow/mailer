@@ -227,7 +227,7 @@ Route::group(array('before' => 'auth'), function(){
     });
     Route::post('/group/fromCSV',function()
     {
-        set_time_limit(10000);
+        set_time_limit(0);
         if (Input::hasFile('csv'))
         {
             $file = Input::file('csv');
