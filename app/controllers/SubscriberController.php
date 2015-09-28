@@ -94,7 +94,8 @@ class SubscriberController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+        $el = Subscriber::findOrFail($id)->restore();
+        return $el;
 	}
 
 	/**
