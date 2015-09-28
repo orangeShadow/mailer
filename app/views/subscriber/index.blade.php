@@ -65,7 +65,7 @@
                             <button onClick="if(!confirm('{{trans('subscriber.messageDelete')}}')) return false;" type="submit" class="btn btn-danger btn-mini"><i class="fa fa-trash-o"></i></button>
                             {{Form::close();}}
                         @else
-                            {{Form::open(array('url' => URL::action('SubscriberController@update',array('id'=>$subscriber->id)), 'method' => 'delete','style'=>'display:inline-block')) }}
+                            {{Form::open(array('url' => URL::action('SubscriberController@update',array('id'=>$subscriber->id)), 'method' => 'put','style'=>'display:inline-block')) }}
                             <button type="submit" class="btn btn-success btn-mini"><i class="fa fa-back-o"></i></button>
                             {{Form::close();}}
                         @endif
