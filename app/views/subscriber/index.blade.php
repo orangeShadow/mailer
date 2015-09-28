@@ -54,8 +54,8 @@
                     </td>
                     <td>
                         {{$subscriber->created_at}}
-                        @if ( empty($subscriber->deleted_at) )
-                            удален: {{$subscriber->deleted_at}}
+                        @if ( !empty($subscriber->deleted_at) )
+                            удален: {{ $subscriber->deleted_at }}
                         @endif
                     </td>
                     <td>
