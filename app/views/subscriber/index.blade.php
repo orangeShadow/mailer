@@ -54,13 +54,13 @@
                     </td>
                     <td>
                         {{$subscriber->created_at}}
-                        @if empty($subscriber->deleted_at)
+                        @if ( empty($subscriber->deleted_at) )
                             удален: {{$subscriber->deleted_at}}
                         @endif
                     </td>
                     <td>
                         <?/*<a href="{{URL::action('SubscriberController@edit',array('id'=>$subscriber->id))}}" class="btn btn-default btn-mini"><i class="fa fa-edit"></i></a>*/   ?>
-                        @if empty($subscriber->deleted_at)
+                        @if ( empty($subscriber->deleted_at) )
                             {{Form::open(array('url' => URL::action('SubscriberController@destroy',array('id'=>$subscriber->id)), 'method' => 'delete','style'=>'display:inline-block')) }}
                             <button onClick="if(!confirm('{{trans('subscriber.messageDelete')}}')) return false;" type="submit" class="btn btn-danger btn-mini"><i class="fa fa-trash-o"></i></button>
                             {{Form::close();}}
