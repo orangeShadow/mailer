@@ -94,7 +94,7 @@ class SubscriberController extends \BaseController {
 	 */
 	public function update($id)
 	{
-        $el = Subscriber::findOrFail($id)->restore();
+        $el = Subscriber::find($id)->withTrashed()->restore();
         Session::flash('template.success','Пользователь восстановлен');
         return Redirect::to(URL::action('SubscriberController@index'));
 	}
