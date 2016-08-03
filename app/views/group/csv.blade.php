@@ -22,6 +22,14 @@
                 </div>
             </div>
         </div>
+        <div id="form-content">
+            <div class="form-group">
+                <label  class="col-sm-2 control-label">Тип:</label>
+                <div class="col-sm-10">
+                    {{Form::checkbox('clean',1)}}
+                </div>
+            </div>
+        </div>
             {{ Form::token()}}
             {{ Form::submit(trans('templates.create'),array('class'=>'btn btn-default'))}}
     {{ Form::close()}}

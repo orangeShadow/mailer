@@ -232,7 +232,11 @@ Route::group(array('before' => 'auth'), function(){
         {
             $file = Input::file('csv');
             $h = fopen($file->getRealPath(),'r');
-            DB::delete(DB::raw("DELETE FROM subscriber_group WHERE group_id =".Input::get('group_id')));
+
+            if(Input::has('clean')) {
+                DB::delete(DB::raw("DELETE FROM subscriber_group WHERE group_id =".Input::get('group_id')));
+            }
+
             while($row = fgets($h)){
                 try{
                     $validator = Validator::make(array("email"=>trim($row)),array("email"=>"email"));
