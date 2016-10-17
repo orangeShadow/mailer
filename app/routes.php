@@ -393,7 +393,7 @@ Route::get('addemail',function(){
         }
     }else{
         if(Input::get('email',null)) {
-            $subs = Subscriber::where('email',Input::get('email',null))->withDelete()->get()->first();
+            $subs = Subscriber::where('email',Input::get('email',null))->withTrashed()->get()->first();
             $subs->restore();
             $mes = new stdClass();
             $mes->error =0;
