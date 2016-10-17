@@ -392,6 +392,13 @@ Route::get('addemail',function(){
             return json_encode($mes);
         }
     }else{
-        return $validator->errors()->toJson();
+        if(Input::get('email',null) && $subs = Subscriber::where('email',Input::get('email',null))) {
+            $subs->restore();
+            $mes = new stdClass();
+            $mes->error =0;
+            return json_encode($mes);
+        }else{
+            return $validator->errors()->toJson();
+        }
     }
 });
