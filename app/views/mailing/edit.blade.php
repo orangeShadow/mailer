@@ -64,7 +64,7 @@
     $(document).ready(function(){
         $('#removeFile').click(function(){
             $.ajax({
-                url:'/mailing/{{$maling->id}}/removeFile',
+                url:'/mailing/{{$mailing->id}}/removeFile',
                 method:"GET",
                 success:function (data) {
                     location.reload();
