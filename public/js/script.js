@@ -4,6 +4,16 @@ $(function(){
         tinymce.init(editor_config);
     }
 
+    $('#removeFile').click(function(){
+        $.ajax({
+            url:'/mailing/{{$mailing->id}}/removeFile',
+            method:"GET",
+            success:function (data) {
+                location.reload();
+            }
+        })
+    });
+
 
     try{
         if($('textarea[name="css"]').length>0){
