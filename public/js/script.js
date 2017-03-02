@@ -5,8 +5,9 @@ $(function(){
     }
 
     $('#removeFile').click(function(){
+        var id  = $(this).data('id');
         $.ajax({
-            url:'/mailing/{{$mailing->id}}/removeFile',
+            url:'/mailing/'+id+'/removeFile',
             method:"GET",
             success:function (data) {
                 location.reload();

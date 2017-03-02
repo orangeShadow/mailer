@@ -49,7 +49,7 @@
                 {{Form::file('file_path','',array('class'=>'form-control'))}}
                 @if(!empty($mailing->file_path))
                 {{$mailing->file_path}}
-                    <a id="removeFile" href="#"><i  class="glyphicon glyphicon-remove"></i> Удалить файл</a>
+                    <a id="removeFile" data-id="{{$mailer->id}}" href="#!"><i  class="glyphicon glyphicon-remove"></i> Удалить файл</a>
                 @endif
             </div>
             <div class="form-group">
