@@ -49,6 +49,7 @@
                 {{Form::file('file_path','',array('class'=>'form-control'))}}
                 @if(!empty($mailing->file_path))
                 {{$mailing->file_path}}
+                    <a id="removeFile" href="#"><i  class="glyphicon glyphicon-remove"></i> Удалить файл</a>
                 @endif
             </div>
             <div class="form-group">
@@ -59,4 +60,17 @@
         {{ Form::close()}}
     </div>
 </div>
+<script>
+    $(document).ready(function(){
+        $('#removeFile').click(function(){
+            $.ajax({
+                url:'/mailing/{{$maling->id}}/removeFile',
+                method:"GET",
+                success:function (data) {
+                    location.reload();
+                }
+            })
+        });
+    });
+</script>
 @stop

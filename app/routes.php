@@ -276,6 +276,13 @@ Route::group(array('before' => 'auth'), function(){
     Route::resource('mailing', 'MailingController');
     Route::resource('subscriber', 'SubscriberController');
 
+    Route::get('mailing/{id}/removeFile/',function($id){
+        $mailing = Mailing::find($id);
+        \File::delete($mailing->file_path);
+        $mailing->file_path=null;
+        $mailing->save();
+    });
+
 
     Route::get('/groupToSubscribe',function()
     {
